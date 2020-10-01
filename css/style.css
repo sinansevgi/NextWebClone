@@ -175,11 +175,11 @@ nav {
 .cover {
   margin: 10px;
   display: grid;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   grid-gap: 10px;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: " large-left-box  small-right-box-1"
                        " large-left-box  small-right-box-2";
 }
