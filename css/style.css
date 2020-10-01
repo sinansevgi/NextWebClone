@@ -1,0 +1,174 @@
+/*
+*  CSS TABLE OF CONTENTS
+*
+*  1.0 - Fonts
+*  2.0 - Menu
+*    2.1 - Black menu
+*    2.2 - Main menu
+*  3.0 - Main
+*    3.1 - Cover
+*    3.2 - Latest News
+*    3.3 - Deals
+*    3.4 - Topics
+*    3.5 - Ads-deals
+*  4.0 - Footer
+*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*** 1.0 - Fonts ***/
+@font-face {
+  font-family: ARS Maquette;
+  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ARS Maquette;
+  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-bold-alt.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-bold-alt.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-bold-alt.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Avalon;
+  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Shentox;
+  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2") format("woff2"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+/*** 3.0 - Menu ***/
+.tnw-logo {
+  display: none;
+}
+
+nav {
+  display: block;
+  margin-top: 0;
+}
+
+/*** 3.1 - Black Menu ***/
+.black-menu {
+  align-items: center;
+  font-family: "ARS Maquette";
+  width: 100vw;
+  height: 2em;
+  background-color: #000;
+  display: flex;
+}
+
+.black-menu li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.black-menu a {
+  color: hsla(0, 0%, 100%, .6);
+  text-decoration: none;
+  font-size: 0.825em;
+}
+
+#first-item {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.corporate-menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/*** 3.2 - Main Menu ***/
+.main-menu {
+  display: flex;
+  height: 48px;
+  width: 100vw;
+  font-family: "Shentox";
+  font-weight: 500;
+  color: #aaa;
+}
+
+.menu {
+  display: flex;
+}
+
+.main-menu li {
+  padding: 18px 12px 0 12px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.main-menu li:first-child {
+  padding: 18px 12px 0 20px;
+  font-size: 14px;
+  letter-spacing: .04em;
+}
+
+.right-menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  color: #545454;
+  font-size: 12px;
+}
+
+#tnw-logo {
+  height: 48px;
+}
+
+.search-button {
+  border-left: 1px solid #aaa;
+  padding: 16px;
+}
+
+.right-menu button {
+  font-family: inherit;
+  color: #fff;
+  font-weight: 700;
+  background-color: #00cccc;
+  line-height: 28px;
+  border: 0;
+  font-size: 11px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.right-menu button:hover {
+  background-color: #90c;
+}
+
+/*** 4.0 - Main ***/
+/*** 5.0 - Footer ***/
