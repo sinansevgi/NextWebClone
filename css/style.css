@@ -61,7 +61,7 @@ img {
 
 @font-face {
   font-family: Shentox;
-  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2") format("woff2"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.ttf") format("truetype");
+  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2") format("woff2"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff") format("woff"), url("") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
@@ -172,3 +172,52 @@ nav {
 
 /*** 4.0 - Main ***/
 /*** 5.0 - Footer ***/
+.cover {
+  margin: 10px;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: " large-left-box  small-right-box-1"
+                       " large-left-box  small-right-box-2";
+}
+
+.large-left-box {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-796x417.png
+);
+
+  background-position: center;
+  background-size: cover;
+  grid-area: large-left-box;
+}
+
+
+
+.small-right-box-1 {
+  grid-area: small-right-box-1;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-01.jpg
+);
+  background-size: cover;
+}
+
+.small-right-box-2 {
+  background-size: cover;
+  grid-area: small-right-box-2;
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_2207d3f7-796x419.png
+);
+
+}
+.logo img {
+  width: 400px;
+  position: absolute;
+  margin-left: 20px;
+  margin: 15px;
+}
+.date {
+  color: #fff;
+  float: right;
+  margin: 10px;
+
+}
