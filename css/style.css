@@ -403,10 +403,10 @@ nav {
   flex-flow: row wrap;
 }
 .deal-header-link{
-  position: absolute;
+  position: relative;
 }
 .deal {
-  height: 200px;
+
   flex-basis: 25%;
   max-width: 25%;
   padding: 12px;
@@ -431,6 +431,31 @@ nav {
 .deal-funding{
   background-color: #feeae6;
   padding: 10.6666666667px 16px 10.6666666667px 84px;
+
+}
+
+
+}
+.medical-tags {
+  display:block;
+  margin-top: 40px;
+  background: #fffaf8;
+  margin-bottom: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+  border-bottom: 1px solid  rgba(255,68,34,.25)
+;
+
+}
+.box-story {
+  display:block;
+  margin-top: 40px;
+  background: #fffaf8;
+  margin-bottom: 30px;
+  line-height: 20px;
+  margin-left: 10px;
+  font-size:12px ;
+  font-family: "ARS Maquette";
 
 }
 /*** 5.0 - Footer ***/
