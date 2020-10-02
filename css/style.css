@@ -365,63 +365,72 @@ nav {
 }
 
 /*** 4.3 - Deals ***/
-.header-red {
+.deals {
   padding: 1.5em 1em 1.5em 1em;
   max-width: 1192px;
   margin: 0 auto;
 }
 
-.Big-title {
-  font-family: 'Avalon';
-  color: #f42;
+.deals-right {
+  float: right;
+  font-family: 'ARS Maquette';
+  text-decoration: none;
+  color: #ff4422;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.deals-right::after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#deals-heading {
+  display: inline;
+  font-family: 'ARS Maquette';
+  color: #ff4422;
+  font-weight: 700;
+}
+
+#heading-link {
   text-decoration: none;
 }
 
-.right-links a {
-  float: right;
-  color: #f42;
-  border-right: 1px solid;
-  justify-content: space-between;
+.deals-container {
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row wrap;
 }
-
-.right-links {
-  justify-content: space-between;
-  float: right;
-  width: 300px;
+.deal-header-link{
+  position: absolute;
 }
-.fund-boxes {
-  display: grid;
-  padding: 1.5em 1em 1.5em 1em;
-  max-width: 1192px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* margin: 0 auto; */
-
-  padding: 12px;
-}
-.box {
+.deal {
+  height: 200px;
   flex-basis: 25%;
   max-width: 25%;
-    margin: 10px;
+  padding: 12px;
 
 }
-.box .box-header{
-  background: #f42;
-  padding: 10px;
+.deal-story {
+  display: block;
+  min-height: 60px;
+  max-width: 100%;
 }
-.box-prices {
-  background: #ffebe7;
-  line-height: 2;
+.deal-header-image{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin:10.6666666667px;
+
+}
+.deal-heading {
+  background: #f42;
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+}
+.deal-funding{
+  background-color: #feeae6;
   padding: 10.6666666667px 16px 10.6666666667px 84px;
 
 }
-
-
-
-
-
-
-
-
-
-
 /*** 5.0 - Footer ***/
