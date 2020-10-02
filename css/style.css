@@ -1,28 +1,42 @@
 /*
 *  CSS TABLE OF CONTENTS
 *
-*  1.0 - Fonts
-*  2.0 - Menu
-*    2.1 - Black menu
-*    2.2 - Main menu
-*  3.0 - Main
-*    3.1 - Cover
-*    3.2 - Latest News
-*    3.3 - Deals
-*    3.4 - Topics
-*    3.5 - Ads-deals
-*  4.0 - Footer
+*  1.0 - Resets
+*  2.0 - Fonts
+*  3.0 - Menu
+*    3.1 - Black menu
+*    3.2 - Main menu
+*  4.0 - Main
+*    4.1 - Cover
+*    4.2 - Latest News
+*    4.3 - Deals
+*    4.4 - Topics
+*    4.5 - Ads-deals
+*  5.0 - Footer
 */
+
+/*** 2.0 - Resets ***/
 html {
   box-sizing: border-box;
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -37,7 +51,7 @@ img {
   height: auto;
 }
 
-/*** 1.0 - Fonts ***/
+/*** 2.0 - Fonts ***/
 @font-face {
   font-family: ARS Maquette;
   src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.woff") format("woff"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.ttf") format("truetype");
@@ -171,31 +185,34 @@ nav {
 }
 
 /*** 4.0 - Main ***/
-/*** 5.0 - Footer ***/
+/*** 4.1 - Cover ***/
 .cover {
-  margin: 10px;
+  margin: 0.5%;
   display: grid;
-  height: 700px;
-  width: 100%;
+  height: 60vh;
+  max-height: 560px;
+  width: 99%;
   grid-gap: 10px;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: " large-left-box  small-right-box-1"
-                       " large-left-box  small-right-box-2";
+    " large-left-box  small-right-box-2";
+  font-family: "Avalon";
+  font-size: 2em;
 }
 
 .large-left-box {
+  height: 100%;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-796x417.png
 );
-
+  position: relative;
   background-position: center;
   background-size: cover;
   grid-area: large-left-box;
 }
 
-
-
 .small-right-box-1 {
+  position: relative;
   grid-area: small-right-box-1;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-01.jpg
 );
@@ -203,43 +220,154 @@ nav {
 }
 
 .small-right-box-2 {
+  position: relative;
   background-size: cover;
   grid-area: small-right-box-2;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_2207d3f7-796x419.png
 );
-
-
 }
+
 .logo img {
   width: 400px;
   position: absolute;
   margin-left: 20px;
   margin: 15px;
 }
+
+.headline-link {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7049019436876314) 36%, rgba(246, 74, 24, 0.7021008232394521) 100%);
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+.small-right-box-1 .headline-link {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 38%, rgba(255, 255, 255, 0) 100%);
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
+.small-right-box-2 .headline-link {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 38%, rgba(255, 255, 255, 0) 100%);
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+
 .date {
   color: #fff;
-  float: right;
   margin: 10px;
-
+  font-size: 0.5em;
+  font-family: 'ARS Maquette';
+  z-index: 9999;
+  position: absolute;
+  top: 4px;
+  right: 4px;
 }
+
 .headline {
-  margin-top: 250px;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
   color: #fff;
 }
- .headline h2 {
-  font-size: 70px;
+
+.headline h2 {
+  font-size: 2em;
   margin-left: 5px;
 }
+
 .headline h1 {
-  font-size: 50px;
+  font-size: 1.5em;
   margin-left: 7px;
 }
+
 .under-text {
   color: white;
-  font-size: 15px;
+  font-size: 0.5em;
   margin-left: 10px
 }
-.small-right-box-1 .headline{
-  font-size: 20px;
-  margin-top: 100px;
+
+.small-right-box-1 .headline {
+  font-size: 0.75em;
 }
+
+.small-right-box-2 .headline {
+  font-size: 0.75em;
+}
+
+/*** 4.2 - Latest News ***/
+.latest-news {
+  padding: 1.5em 1em 1.5em 1em;
+  max-width: 1192px;
+  margin: 0 auto;
+}
+
+.latest-flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.section-heading {
+  font-family: 'Avalon';
+  color: #f42;
+  text-decoration: none;
+}
+.section-heading h2{
+  padding: 12px;
+}
+.news {
+  flex-basis: 25%;
+  max-width: 25%;
+  padding: 12px;
+}
+
+.story-image img {
+  width: 100vw;
+  object-fit: cover;
+  height: 135px;
+}
+
+.story-title-link {
+  font-family: 'ARS Maquette';
+  font-weight: 700;
+  line-height: 1em;
+  color: #000;
+  text-decoration: none;
+}
+
+.story-sub li{
+  font-family: 'ARS Maquette';
+  font-weight: 400;
+  font-size: 0.75em;
+  display: inline;
+  color:#aaa;
+}
+.story-author::after{
+  content: ' \B7';
+  margin: 4px
+}
+/*** 4.3 - Deals ***/
+
+
+
+
+
+
+
+
+/*** 5.0 - Footer ***/
