@@ -418,11 +418,15 @@ nav {
   max-width: 100%;
 }
 
-.deal-header-image {
+ .deal-header-image  {
   width: 60px;
   height: 60px;
   position: absolute;
   margin: 10.6666666667px;
+  top: 0;
+  left: 0;
+  max-width: 60px;
+  z-index: 10;
 }
 
 .deal-heading {
@@ -437,7 +441,7 @@ nav {
 
 .medical-tags {
   display: block;
-  margin-top: 40px;
+  margin-top: 0;
   background: #fffaf8;
   margin-bottom: 30px;
   line-height: 30px;
@@ -448,7 +452,6 @@ nav {
 .medical-tags li {
   margin-left: 20px;
   line-height: 30px;
-  margin-top: 10px;
 }
 
 .box-story {
@@ -461,5 +464,44 @@ nav {
   font-size: 12px;
   font-family: "ARS Maquette";
 }
+/* *    4.4 - Topics */
+.topics {
+  margin-top: 30px;
+  flex: 1 0 33.333333%;
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 600px;
+  margin-left: 50px;
+  flex: 1 0 33.333333%;
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 600px;
+}
+.board-1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Super-Software-Bundle-540x270.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 250px;
+  min-width: 400px;
+  max-width: 450px;
+  max-height: 300px;
+  margin-top: 15px;
+  justify-content: flex-end;
+  color: #fff;
+
+}
+.board-1-contents {
+  display: block;
+  top: 100px;
+  position: relative;
+
+}
+
+
+
+
+
+
 
 /*** 5.0 - Footer ***/
