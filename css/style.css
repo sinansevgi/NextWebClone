@@ -402,60 +402,64 @@ nav {
   flex: 0 1 auto;
   flex-flow: row wrap;
 }
-.deal-header-link{
+
+.deal-header-link {
   position: relative;
 }
 .deal {
-
   flex-basis: 25%;
   max-width: 25%;
   padding: 12px;
-
 }
+
 .deal-story {
   display: block;
   min-height: 60px;
   max-width: 100%;
 }
-.deal-header-image{
+
+.deal-header-image {
   width: 60px;
   height: 60px;
   position: absolute;
-  margin:10.6666666667px;
-
+  margin: 10.6666666667px;
 }
+
 .deal-heading {
   background: #f42;
   padding: 10.6666666667px 16px 10.6666666667px 84px;
 }
-.deal-funding{
+
+.deal-funding {
   background-color: #feeae6;
   padding: 10.6666666667px 16px 10.6666666667px 84px;
-
 }
 
-
-}
 .medical-tags {
-  display:block;
+  display: block;
   margin-top: 40px;
   background: #fffaf8;
   margin-bottom: 30px;
   line-height: 30px;
   margin-left: 10px;
-  border-bottom: 1px solid  rgba(255,68,34,.25)
-;
-
+  border-bottom: 1px solid rgba(255, 68, 34, .25);
 }
+
+.medical-tags li {
+  margin-left: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
 .box-story {
-  display:block;
+  display: block;
   margin-top: 40px;
   background: #fffaf8;
   margin-bottom: 30px;
   line-height: 20px;
   margin-left: 10px;
-  font-size:12px ;
+  font-size: 12px;
   font-family: "ARS Maquette";
-
 }
+
 /*** 5.0 - Footer ***/
