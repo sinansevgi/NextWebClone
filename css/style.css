@@ -14,7 +14,6 @@
 *    4.5 - Ads-deals
 *  5.0 - Footer
 */
-
 /*** 2.0 - Resets ***/
 html {
   box-sizing: border-box;
@@ -327,9 +326,11 @@ nav {
   color: #f42;
   text-decoration: none;
 }
-.section-heading h2{
+
+.section-heading h2 {
   padding: 12px;
 }
+
 .news {
   flex-basis: 25%;
   max-width: 25%;
@@ -350,18 +351,71 @@ nav {
   text-decoration: none;
 }
 
-.story-sub li{
+.story-sub li {
   font-family: 'ARS Maquette';
   font-weight: 400;
   font-size: 0.75em;
   display: inline;
-  color:#aaa;
+  color: #aaa;
 }
-.story-author::after{
+
+.story-author::after {
   content: ' \B7';
   margin: 4px
 }
+
 /*** 4.3 - Deals ***/
+.header-red {
+  padding: 1.5em 1em 1.5em 1em;
+  max-width: 1192px;
+  margin: 0 auto;
+}
+
+.Big-title {
+  font-family: 'Avalon';
+  color: #f42;
+  text-decoration: none;
+}
+
+.right-links a {
+  float: right;
+  color: #f42;
+  border-right: 1px solid;
+  justify-content: space-between;
+}
+
+.right-links {
+  justify-content: space-between;
+  float: right;
+  width: 300px;
+}
+.fund-boxes {
+  display: grid;
+  padding: 1.5em 1em 1.5em 1em;
+  max-width: 1192px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* margin: 0 auto; */
+
+  padding: 12px;
+}
+.box {
+  flex-basis: 25%;
+  max-width: 25%;
+    margin: 10px;
+
+}
+.box .box-header{
+  background: #f42;
+  padding: 10px;
+}
+.box-prices {
+  background: #ffebe7;
+  line-height: 2;
+  padding: 10.6666666667px 16px 10.6666666667px 84px;
+
+}
+
+
 
 
 
