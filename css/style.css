@@ -86,6 +86,7 @@ nav {
   display: block;
   margin-top: 0;
 }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -93,6 +94,7 @@ nav {
   z-index: 99999;
   background: #fff;
 }
+
 /*** 3.1 - Black Menu ***/
 .black-menu {
   align-items: center;
@@ -159,9 +161,10 @@ nav {
   font-size: 12px;
 }
 
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
+
 .search-button {
   border-left: 1px solid #aaa;
   padding: 16px;
@@ -640,7 +643,8 @@ nav {
   padding-right: 12px;
 
 }
-.ads-deals-header a{
+
+.ads-deals-header a {
   text-decoration: none;
   color: #f42;
 }
@@ -683,20 +687,23 @@ nav {
 }
 
 /*** 5.0 - Footer ***/
-.social-menu{
+.social-menu {
   background: #131313;
   text-align: center;
 }
+
 .social-links {
   padding-top: 50px;
 }
-.social-links a{
+
+.social-links a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
   font-size: 16px;
 }
-.social-links li{
-  border:2px solid #333;
+
+.social-links li {
+  border: 2px solid #333;
   box-sizing: border-box;
   border-radius: 50%;
   background: #333;
@@ -705,25 +712,29 @@ nav {
   display: inline;
 }
 
-.social-links li:hover{
+.social-links li:hover {
   background: #000;
 }
-.footer-menu{
+
+.footer-menu {
   margin-top: 30px;
   padding-bottom: 20px;
 
 }
+
 .footer-menu li {
   display: inline;
-  margin:5px;
-  }
-.footer-menu a{
-  font-size: 0.75rem;
-  font-family: 'Shentox',sans-serif;
-  text-decoration: none;
-  color:#aaa;
+  margin: 5px;
 }
-.legal{
+
+.footer-menu a {
+  font-size: 0.75rem;
+  font-family: 'Shentox', sans-serif;
+  text-decoration: none;
+  color: #aaa;
+}
+
+.legal {
   padding: 40px;
   width: 100%;
   background: #000;
@@ -732,139 +743,168 @@ nav {
   font-size: 0.825rem;
 
 }
-.legal img{
+
+.legal img {
   height: 0.825rem;
 }
+
 /***
 *
 *MEDIA QUERIES
 *
 ***/
 
-@media screen and (max-width:480px) {
-  body{
-    font-size:10px;
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
   }
-  .disappear{
+
+  .disappear {
     display: none;
   }
-  .black-menu{
+
+  .black-menu {
     display: none;
   }
+
   .tnw-logo {
     display: block;
     height: 48px;
     width: 100px;
-    padding:16px;
+    padding: 16px;
     background: #000;
   }
-  .menu{
+
+  .menu {
     display: none;
   }
-  .mobile-menu{
+
+  .mobile-menu {
     display: block;
-    color:#f42;
+    color: #f42;
     font-size: 1.5rem;
   }
-.cover {
-  max-height: 100vh;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3,1fr);
-  grid-template-areas: "large-left-box" "small-right-box-1" "small-right-box-2";
 
-}
-  .news{
+  .cover {
+    max-height: 100vh;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "large-left-box" "small-right-box-1" "small-right-box-2";
+
+  }
+
+  .news {
     flex-basis: 100%;
     max-width: 100%;
   }
-  .story-image img{
+
+  .story-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .story-image{
+
+  .story-image {
     flex-basis: 20%;
     max-width: 20%;
   }
-  .story-title{
+
+  .story-title {
     flex-basis: 80%;
     max-width: 80%;
   }
+
   .story-sub {
     margin-left: 20%;
   }
-  .news-story{
+
+  .news-story {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  .deal{
+
+  .deal {
     flex-basis: 100%;
     max-width: 100%;
   }
-  .deals-right{
+
+  .deals-right {
     display: block;
-    float:none;
+    float: none;
   }
-  .deals-right::after{
-    content:'';
+
+  .deals-right::after {
+    content: '';
   }
-  .topic-section{
+
+  .topic-section {
     flex-basis: 100%;
     max-width: 100%;
   }
-  .latest-deals-box{
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(8,1fr);
+
+  .latest-deals-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
   }
-  .ads-container{
+
+  .ads-container {
     display: grid;
-    grid-gap:10px;
+    grid-gap: 10px;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr;
 
   }
-  .ads-container img{
-    grid-row:1/3;
-    margin-top:3px;
+
+  .ads-container img {
+    grid-row: 1/3;
+    margin-top: 3px;
   }
-  .deals-price{
+
+  .deals-price {
     grid-column-start: 2;
   }
-  .img-details{
-    margin:0;
+
+  .img-details {
+    margin: 0;
   }
 }
 
-@media screen and (max-width:768px){
-  body{
+@media screen and (max-width: 768px) {
+  body {
     font-size: 12px;
   }
+
   .tnw-logo {
     display: block;
     height: 48px;
     width: 60px;
-    padding:16px;
+    padding: 16px;
     background: #000;
   }
-  .disappear{
+
+  .disappear {
     display: none;
   }
-  .deal{
+
+  .deal {
     flex-basis: 33.333%;
     max-width: 33.3333%;
   }
-  .news{
+
+  .news {
     flex-basis: 33.333%;
     max-width: 33.3333%;
   }
-  .topic-section{
+
+  .topic-section {
     flex-basis: 50%;
     max-width: 50%;
   }
-  .latest-deals-box{
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+
+  .latest-deals-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
