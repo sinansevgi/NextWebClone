@@ -42,7 +42,8 @@ ul {
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -111,7 +112,7 @@ nav {
 }
 
 .black-menu a {
-  color: hsla(0, 0%, 100%, .6);
+  color: hsla(0, 0%, 100%, 0.6);
   text-decoration: none;
   font-size: 0.825rem;
 }
@@ -150,7 +151,7 @@ nav {
 .main-menu li:first-child {
   padding: 18px 12px 0 20px;
   font-size: 14px;
-  letter-spacing: .04rem;
+  letter-spacing: 0.04rem;
 }
 
 .right-menu {
@@ -174,7 +175,7 @@ nav {
   font-family: inherit;
   color: #fff;
   font-weight: 700;
-  background-color: #00cccc;
+  background-color: #0cc;
   line-height: 28px;
   border: 0;
   font-size: 11px;
@@ -190,6 +191,7 @@ nav {
 }
 
 /*** 4.0 - Main ***/
+
 /*** 4.1 - Cover ***/
 .cover {
   margin: 0.5%;
@@ -200,8 +202,9 @@ nav {
   grid-gap: 10px;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: " large-left-box  small-right-box-1"
-    " large-left-box  small-right-box-2";
+  grid-template-areas:
+          " large-left-box  small-right-box-1"
+          " large-left-box  small-right-box-2";
   font-family: "Avalon", sans-serif;
   font-size: 2rem;
 }
@@ -380,7 +383,7 @@ nav {
   float: right;
   font-family: 'ARS Maquette', sans-serif;
   text-decoration: none;
-  color: #ff4422;
+  color: #f42;
   padding-top: 4px;
   padding-bottom: 4px;
 }
@@ -394,7 +397,7 @@ nav {
 #deals-heading {
   display: inline;
   font-family: 'ARS Maquette', sans-serif;
-  color: #ff4422;
+  color: #f42;
   font-weight: 700;
 }
 
@@ -503,7 +506,7 @@ nav {
 
 .topic-title {
   font-family: 'Avalon', sans-serif;
-  color: #ff4422;
+  color: #f42;
   font-size: 1.5rem;
 }
 
@@ -592,7 +595,6 @@ nav {
   flex-basis: 0;
   color: #f32;
   font-weight: 700;
-
 }
 
 .recent-image {
@@ -614,7 +616,6 @@ nav {
   padding: 6px 0 6px 14px;
   line-height: 1.5;
   font-size: 13px;
-
 }
 
 .topic-list::before {
@@ -632,7 +633,6 @@ nav {
   padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
   margin: 0 auto;
-
 }
 
 .ads-deals-header {
@@ -641,7 +641,6 @@ nav {
   color: #f42;
   justify-content: space-between;
   padding-right: 12px;
-
 }
 
 .ads-deals-header a {
@@ -657,7 +656,6 @@ nav {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 12px;
-
 }
 
 .img-details {
@@ -679,7 +677,6 @@ nav {
   color: #aaa;
   padding: 0 4px 0 0;
   text-decoration: line-through;
-
 }
 
 .span-2 {
@@ -741,7 +738,6 @@ nav {
   text-align: center;
   color: #fff;
   font-size: 0.825rem;
-
 }
 
 .legal img {
@@ -791,7 +787,6 @@ nav {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "large-left-box" "small-right-box-1" "small-right-box-2";
-
   }
 
   .news {
