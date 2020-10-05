@@ -30,7 +30,7 @@
 👤 **Sinan Sevgi**
 
 - GitHub: [@sinansevgi](https://github.com/sinansevgi)
-- LinkedIn: (https://www.linkedin.com/in/sinan-s-52559437/)
+- LinkedIn: [@sinansevgi](https://www.linkedin.com/in/sinan-s-52559437/)
 - Twitter: [@nativeofcyber1](https://twitter.com/nativeofcyber1)
 
 ## �� Contributing
