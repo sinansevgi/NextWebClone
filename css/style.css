@@ -707,6 +707,11 @@ nav {
   display: inline;
 }
 
+.footer-menu li {
+  display: inline;
+  margin: 5px;
+}
+
 .social-links li:hover {
   background: #000;
 }
@@ -714,11 +719,6 @@ nav {
 .footer-menu {
   margin-top: 30px;
   padding-bottom: 20px;
-}
-
-.footer-menu li {
-  display: inline;
-  margin: 5px;
 }
 
 .footer-menu a {
@@ -846,7 +846,6 @@ nav {
     grid-gap: 10px;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr;
-
   }
 
   .ads-container img {
