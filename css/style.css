@@ -750,7 +750,7 @@ nav {
 *
 ***/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   body {
     font-size: 10px;
   }
@@ -866,7 +866,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   body {
     font-size: 12px;
   }
