@@ -14,7 +14,7 @@
 *    4.5 - Ads-deals
 *  5.0 - Footer
 */
-/*** 2.0 - Resets ***/
+/*** 1.0 - Resets ***/
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -86,13 +86,19 @@ nav {
   display: block;
   margin-top: 0;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  background: #fff;
+}
 /*** 3.1 - Black Menu ***/
 .black-menu {
   align-items: center;
   font-family: "ARS Maquette", sans-serif;
   width: 100vw;
-  height: 2em;
+  height: 2rem;
   background-color: #000;
   display: flex;
 }
@@ -105,7 +111,7 @@ nav {
 .black-menu a {
   color: hsla(0, 0%, 100%, .6);
   text-decoration: none;
-  font-size: 0.825em;
+  font-size: 0.825rem;
 }
 
 #first-item {
@@ -136,13 +142,13 @@ nav {
 .main-menu li {
   padding: 18px 12px 0 12px;
   font-size: 14px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.04rem;
 }
 
 .main-menu li:first-child {
   padding: 18px 12px 0 20px;
   font-size: 14px;
-  letter-spacing: .04em;
+  letter-spacing: .04rem;
 }
 
 .right-menu {
@@ -153,10 +159,9 @@ nav {
   font-size: 12px;
 }
 
-#tnw-logo {
-  height: 48px;
+.mobile-menu{
+  display: none;
 }
-
 .search-button {
   border-left: 1px solid #aaa;
   padding: 16px;
@@ -195,7 +200,7 @@ nav {
   grid-template-areas: " large-left-box  small-right-box-1"
     " large-left-box  small-right-box-2";
   font-family: "Avalon", sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .large-left-box {
@@ -225,7 +230,7 @@ nav {
 }
 
 .logo img {
-  width: 400px;
+  width: 25rem;
   position: absolute;
   margin: 15px 15px 15px 20px;
 }
@@ -266,7 +271,7 @@ nav {
 .date {
   color: #fff;
   margin: 10px;
-  font-size: 0.5em;
+  font-size: 0.75rem;
   font-family: 'ARS Maquette', sans-serif;
   z-index: 9999;
   position: absolute;
@@ -283,32 +288,32 @@ nav {
 }
 
 .headline h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-left: 5px;
 }
 
 .headline h1 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-left: 7px;
 }
 
 .under-text {
   color: white;
-  font-size: 0.5em;
+  font-size: 0.75rem;
   margin-left: 10px
 }
 
 .small-right-box-1 .headline {
-  font-size: 0.75em;
+  font-size: 0.75rem;
 }
 
 .small-right-box-2 .headline {
-  font-size: 0.75em;
+  font-size: 0.75rem;
 }
 
 /*** 4.2 - Latest News ***/
 .latest-news {
-  padding: 1.5em 1em 1.5em 1em;
+  padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
   margin: 0 auto;
 }
@@ -343,7 +348,7 @@ nav {
 .story-title-link {
   font-family: 'ARS Maquette', sans-serif;
   font-weight: 700;
-  line-height: 1em;
+  line-height: 1rem;
   color: #000;
   text-decoration: none;
 }
@@ -351,7 +356,7 @@ nav {
 .story-sub li {
   font-family: 'ARS Maquette', sans-serif;
   font-weight: 400;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   display: inline;
   color: #aaa;
 }
@@ -363,7 +368,7 @@ nav {
 
 /*** 4.3 - Deals ***/
 .deals {
-  padding: 1.5em 1em 1.5em 1em;
+  padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
   margin: 0 auto;
 }
@@ -395,6 +400,8 @@ nav {
 }
 
 .deals-container {
+  justify-content: center;
+  width: 100%;
   display: flex;
   flex: 0 1 auto;
   flex-flow: row wrap;
@@ -494,7 +501,7 @@ nav {
 .topic-title {
   font-family: 'Avalon', sans-serif;
   color: #ff4422;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 #topic1 {
@@ -612,14 +619,14 @@ nav {
   color: #f42;
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  width: 1rem;
+  margin-left: -1rem;
 }
 
 /*** 4.5 - Ads-deals ***/
 
 .ads-deals {
-  padding: 1.5em 1em 1.5em 1em;
+  padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
   margin: 0 auto;
 
@@ -651,7 +658,7 @@ nav {
 
 .img-details {
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .img-details a {
@@ -711,7 +718,7 @@ nav {
   margin:5px;
   }
 .footer-menu a{
-  font-size: 0.75em;
+  font-size: 0.75rem;
   font-family: 'Shentox',sans-serif;
   text-decoration: none;
   color:#aaa;
@@ -722,9 +729,142 @@ nav {
   background: #000;
   text-align: center;
   color: #fff;
-  font-size: 0.825em;
+  font-size: 0.825rem;
 
 }
 .legal img{
-  height: 0.825em;
+  height: 0.825rem;
+}
+/***
+*
+*MEDIA QUERIES
+*
+***/
+
+@media screen and (max-width:480px) {
+  body{
+    font-size:10px;
+  }
+  .disappear{
+    display: none;
+  }
+  .black-menu{
+    display: none;
+  }
+  .tnw-logo {
+    display: block;
+    height: 48px;
+    width: 100px;
+    padding:16px;
+    background: #000;
+  }
+  .menu{
+    display: none;
+  }
+  .mobile-menu{
+    display: block;
+    color:#f42;
+    font-size: 1.5rem;
+  }
+.cover {
+  max-height: 100vh;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-areas: "large-left-box" "small-right-box-1" "small-right-box-2";
+
+}
+  .news{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .story-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .story-image{
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+  .story-title{
+    flex-basis: 80%;
+    max-width: 80%;
+  }
+  .story-sub {
+    margin-left: 20%;
+  }
+  .news-story{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .deal{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .deals-right{
+    display: block;
+    float:none;
+  }
+  .deals-right::after{
+    content:'';
+  }
+  .topic-section{
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .latest-deals-box{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(8,1fr);
+  }
+  .ads-container{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+  .ads-container img{
+    grid-row:1/3;
+    margin-top:3px;
+  }
+  .deals-price{
+    grid-column-start: 2;
+  }
+  .img-details{
+    margin:0;
+  }
+}
+
+@media screen and (max-width:768px) and (min-width:481px){
+  body{
+    font-size: 12px;
+  }
+  .tnw-logo {
+    display: block;
+    height: 48px;
+    width: 60px;
+    padding:16px;
+    background: #000;
+  }
+  .disappear{
+    display: none;
+  }
+  .deal{
+    flex-basis: 33.333%;
+    max-width: 33.3333%;
+  }
+  .news{
+    flex-basis: 33.333%;
+    max-width: 33.3333%;
+  }
+  .topic-section{
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .latest-deals-box{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
 }

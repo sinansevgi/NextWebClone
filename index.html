@@ -14,7 +14,6 @@
 
 <body>
 <nav>
-  <div class="tnw-logo"></div>
   <ul class="black-menu">
     <li><a href="#" id="first-item">News</a></li>
     <li><a href="#">Events ▾</a></li>
@@ -29,15 +28,16 @@
       <li><a href="#">Contact</a></li>
     </div>
   </ul>
-  <div class="main-menu">
+  <div class="main-menu" id="navbar">
+    <div class="tnw-logo"><img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"></div>
     <ul class="menu">
       <li>LATEST</li>
       <li>HARD FORK</li>
       <li>PLUGGED</li>
       <li>README</li>
       <li>GROWTH QUARTERS</li>
-      <li>SHIFT</li>
-      <li>NEURAL</li>
+      <li class="disappear">SHIFT</li>
+      <li class="disappear">NEURAL</li>
     </ul>
     <div class="right-menu">
       <a class="search-button" href="#">
@@ -48,10 +48,9 @@
                   fill="#AAA"/>
         </svg>
       </a>
-      <img alt="TNW2020" id="tnw-logo"
-           src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/event-bl-tnw2020.svg">
-      <p>IS HAPPENING NOW</p>
-      <button>GET TICKETS</button>
+      <a class="search-button mobile-menu" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
     </div>
   </div>
 
@@ -61,7 +60,7 @@
     <div class="large-left-box">
 
       <a class="headline-link" href="#"></a>
-      <div class="logo">
+      <div class="logo disappear">
         <img alt="logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
       </div>
 
@@ -220,8 +219,8 @@
             </div>
           </a>
           <ul class="medical-tags">
-            <li><i aria-hidden="true" class="fa fa-tag"></i> Information Technology, +3</li>
-            <li><i aria-hidden="true" class="fa fa-tag"></i> Hyde Park Venture Partners, +3</li>
+            <li><i aria-hidden="true" class="fa fa-tag"></i> Information Technology</li>
+            <li><i aria-hidden="true" class="fa fa-tag"></i> Hyde Park Venture</li>
           </ul>
           <div class="box-story">
             <p>
@@ -272,7 +271,7 @@
           </div>
         </div>
       </div>
-      <div class="deal">
+      <div class="deal disappear">
         <div class="deal-story">
           <a class="deal-header-link" href="#">
             <img alt="" class="deal-header-image"
@@ -719,5 +718,23 @@
 </footer>
 
 </body>
+<script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
 
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
 </html>
