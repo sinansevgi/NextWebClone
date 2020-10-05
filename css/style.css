@@ -944,9 +944,10 @@ nav {
     display: none;
   }
 
-  .deals{
+  .deals {
     padding: 10px;
   }
+  
   .deal {
     padding: 10px;
     flex-basis: 33.333%;

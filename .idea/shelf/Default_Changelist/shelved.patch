@@ -1,0 +1,1251 @@
+Index: css/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*\n*  CSS TABLE OF CONTENTS\n*\n*  1.0 - Resets\n*  2.0 - Fonts\n*  3.0 - Menu\n*    3.1 - Black menu\n*    3.2 - Main menu\n*  4.0 - Main\n*    4.1 - Cover\n*    4.2 - Latest News\n*    4.3 - Deals\n*    4.4 - Topics\n*    4.5 - Ads-deals\n*  5.0 - Footer\n*/\n/*** 2.0 - Resets ***/\nhtml {\n  box-sizing: border-box;\n  font-size: 16px;\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit;\n}\n\nbody,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nol,\nul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n}\n\nol, ul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n/*** 2.0 - Fonts ***/\n@font-face {\n  font-family: ARS Maquette;\n  src: url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.eot#iefix\") format(\"embedded-opentype\"), url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.woff\") format(\"woff\"), url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-regular.ttf\") format(\"truetype\");\n  font-style: normal;\n  font-weight: 400;\n}\n\n@font-face {\n  font-family: ARS Maquette;\n  src: url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-bold-alt.eot#iefix\") format(\"embedded-opentype\"), url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-bold-alt.woff\") format(\"woff\"), url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/ars-maquette-bold-alt.ttf\") format(\"truetype\");\n  font-style: normal;\n  font-weight: 700;\n}\n\n@font-face {\n  font-family: Avalon;\n  src: url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.eot#iefix\") format(\"embedded-opentype\"), url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.woff\") format(\"woff\"), url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/avalon-bold.ttf\") format(\"truetype\");\n  font-style: normal;\n  font-weight: 700;\n}\n\n@font-face {\n  font-family: Shentox;\n  src: url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix\") format(\"embedded-opentype\"), url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2\") format(\"woff2\"), url(\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff\") format(\"woff\"), url(\"\") format(\"truetype\");\n  font-style: normal;\n  font-weight: 500;\n}\n\n/*** 3.0 - Menu ***/\n.tnw-logo {\n  display: none;\n}\n\nnav {\n  display: block;\n  margin-top: 0;\n}\n\n/*** 3.1 - Black Menu ***/\n.black-menu {\n  align-items: center;\n  font-family: \"ARS Maquette\";\n  width: 100vw;\n  height: 2em;\n  background-color: #000;\n  display: flex;\n}\n\n.black-menu li {\n  margin-left: 5px;\n  margin-right: 5px;\n}\n\n.black-menu a {\n  color: hsla(0, 0%, 100%, .6);\n  text-decoration: none;\n  font-size: 0.825em;\n}\n\n#first-item {\n  margin-left: 20px;\n  color: #fff;\n}\n\n.corporate-menu {\n  display: flex;\n  margin-left: auto;\n  margin-right: 20px;\n}\n\n/*** 3.2 - Main Menu ***/\n.main-menu {\n  display: flex;\n  height: 48px;\n  width: 100vw;\n  font-family: \"Shentox\";\n  font-weight: 500;\n  color: #aaa;\n}\n\n.menu {\n  display: flex;\n}\n\n.main-menu li {\n  padding: 18px 12px 0 12px;\n  font-size: 14px;\n  letter-spacing: 0.04em;\n}\n\n.main-menu li:first-child {\n  padding: 18px 12px 0 20px;\n  font-size: 14px;\n  letter-spacing: .04em;\n}\n\n.right-menu {\n  margin-left: auto;\n  display: flex;\n  align-items: center;\n  color: #545454;\n  font-size: 12px;\n}\n\n#tnw-logo {\n  height: 48px;\n}\n\n.search-button {\n  border-left: 1px solid #aaa;\n  padding: 16px;\n}\n\n.right-menu button {\n  font-family: inherit;\n  color: #fff;\n  font-weight: 700;\n  background-color: #00cccc;\n  line-height: 28px;\n  border: 0;\n  font-size: 11px;\n  padding-left: 12px;\n  padding-right: 12px;\n  border-radius: 3px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.right-menu button:hover {\n  background-color: #90c;\n}\n\n/*** 4.0 - Main ***/\n/*** 4.1 - Cover ***/\n.cover {\n  margin: 0.5%;\n  display: grid;\n  height: 60vh;\n  max-height: 560px;\n  width: 99%;\n  grid-gap: 10px;\n  grid-template-columns: 2fr 1fr;\n  grid-template-rows: 1fr 1fr;\n  grid-template-areas: \" large-left-box  small-right-box-1\"\n    \" large-left-box  small-right-box-2\";\n  font-family: \"Avalon\";\n  font-size: 2em;\n}\n\n.large-left-box {\n  height: 100%;\n  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-796x417.png\n);\n  position: relative;\n  background-position: center;\n  background-size: cover;\n  grid-area: large-left-box;\n}\n\n.small-right-box-1 {\n  position: relative;\n  grid-area: small-right-box-1;\n  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-01.jpg\n);\n  background-size: cover;\n}\n\n.small-right-box-2 {\n  position: relative;\n  background-size: cover;\n  grid-area: small-right-box-2;\n  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_2207d3f7-796x419.png\n);\n}\n\n.logo img {\n  width: 400px;\n  position: absolute;\n  margin-left: 20px;\n  margin: 15px;\n}\n\n.headline-link {\n  background: rgb(0, 0, 0);\n  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7049019436876314) 36%, rgba(246, 74, 24, 0.7021008232394521) 100%);\n  background-size: 100% 100%;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  top: 0px;\n  right: 0px;\n}\n\n.small-right-box-1 .headline-link {\n  background: rgb(0, 0, 0);\n  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 38%, rgba(255, 255, 255, 0) 100%);\n  background-size: 100% 100%;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  top: 0px;\n  right: 0px;\n}\n\n.small-right-box-2 .headline-link {\n  background: rgb(0, 0, 0);\n  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 38%, rgba(255, 255, 255, 0) 100%);\n  background-size: 100% 100%;\n  position: absolute;\n  bottom: 0px;\n  left: 0px;\n  top: 0px;\n  right: 0px;\n}\n\n.date {\n  color: #fff;\n  margin: 10px;\n  font-size: 0.5em;\n  font-family: 'ARS Maquette';\n  z-index: 9999;\n  position: absolute;\n  top: 4px;\n  right: 4px;\n}\n\n.headline {\n  position: absolute;\n  bottom: 4px;\n  left: 4px;\n  right: 4px;\n  color: #fff;\n}\n\n.headline h2 {\n  font-size: 2em;\n  margin-left: 5px;\n}\n\n.headline h1 {\n  font-size: 1.5em;\n  margin-left: 7px;\n}\n\n.under-text {\n  color: white;\n  font-size: 0.5em;\n  margin-left: 10px\n}\n\n.small-right-box-1 .headline {\n  font-size: 0.75em;\n}\n\n.small-right-box-2 .headline {\n  font-size: 0.75em;\n}\n\n/*** 4.2 - Latest News ***/\n.latest-news {\n  padding: 1.5em 1em 1.5em 1em;\n  max-width: 1192px;\n  margin: 0 auto;\n}\n\n.latest-flex {\n  display: flex;\n  flex-flow: row wrap;\n}\n\n.section-heading {\n  font-family: 'Avalon';\n  color: #f42;\n  text-decoration: none;\n}\n\n.section-heading h2 {\n  padding: 12px;\n}\n\n.news {\n  flex-basis: 25%;\n  max-width: 25%;\n  padding: 12px;\n}\n\n.story-image img {\n  width: 100vw;\n  object-fit: cover;\n  height: 135px;\n}\n\n.story-title-link {\n  font-family: 'ARS Maquette';\n  font-weight: 700;\n  line-height: 1em;\n  color: #000;\n  text-decoration: none;\n}\n\n.story-sub li {\n  font-family: 'ARS Maquette';\n  font-weight: 400;\n  font-size: 0.75em;\n  display: inline;\n  color: #aaa;\n}\n\n.story-author::after {\n  content: ' \\B7';\n  margin: 4px\n}\n\n/*** 4.3 - Deals ***/\n.deals {\n  padding: 1.5em 1em 1.5em 1em;\n  max-width: 1192px;\n  margin: 0 auto;\n}\n\n.deals-right {\n  float: right;\n  font-family: 'ARS Maquette';\n  text-decoration: none;\n  color: #ff4422;\n  padding-top: 4px;\n  padding-bottom: 4px;\n}\n\n.deals-right::after {\n  content: \"|\";\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n#deals-heading {\n  display: inline;\n  font-family: 'ARS Maquette';\n  color: #ff4422;\n  font-weight: 700;\n}\n\n#heading-link {\n  text-decoration: none;\n}\n\n.deals-container {\n  display: flex;\n  flex: 0 1 auto;\n  flex-flow: row wrap;\n}\n\n.deal-header-link {\n  position: relative;\n}\n.deal {\n  flex-basis: 25%;\n  max-width: 25%;\n  padding: 12px;\n}\n\n.deal-story {\n  display: block;\n  min-height: 60px;\n  max-width: 100%;\n}\n\n .deal-header-image  {\n  width: 60px;\n  height: 60px;\n  position: absolute;\n  margin: 10.6666666667px;\n  top: 0;\n  left: 0;\n  max-width: 60px;\n  z-index: 10;\n}\n\n.deal-heading {\n  background: #f42;\n  padding: 10.6666666667px 16px 10.6666666667px 84px;\n}\n\n.deal-funding {\n  background-color: #feeae6;\n  padding: 10.6666666667px 16px 10.6666666667px 84px;\n}\n\n.medical-tags {\n  display: block;\n  margin-top: 0;\n  background: #fffaf8;\n  margin-bottom: 30px;\n  line-height: 30px;\n  margin-left: 10px;\n  border-bottom: 1px solid rgba(255, 68, 34, .25);\n}\n\n.medical-tags li {\n  margin-left: 20px;\n  line-height: 30px;\n}\n\n.box-story {\n  display: block;\n  margin-top: 40px;\n  background: #fffaf8;\n  margin-bottom: 30px;\n  line-height: 20px;\n  margin-left: 10px;\n  font-size: 12px;\n  font-family: \"ARS Maquette\";\n}\n/* *    4.4 - Topics */\n.topics {\n  margin-top: 30px;\n  flex: 1 0 33.333333%;\n  box-sizing: border-box;\n  padding: 10px;\n  min-height: 600px;\n  margin-left: 50px;\n  flex: 1 0 33.333333%;\n  box-sizing: border-box;\n  padding: 10px;\n  min-height: 600px;\n}\n.board-1 {\n  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Super-Software-Bundle-540x270.jpg);\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 250px;\n  min-width: 400px;\n  max-width: 450px;\n  max-height: 300px;\n  margin-top: 15px;\n  justify-content: flex-end;\n  color: #fff;\n\n}\n.board-1-contents {\n  display: block;\n  top: 100px;\n  position: relative;\n\n}\n\n\n\n\n\n\n\n/*** 5.0 - Footer ***/\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- css/style.css	(revision 11015ed539ac1053bcefb91a97d1a78db9e97f60)
++++ css/style.css	(date 1601890395283)
+@@ -71,14 +71,9 @@
+   font-style: normal;
+   font-weight: 700;
+ }
+-
+-@font-face {
+-  font-family: Shentox;
+-  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2") format("woff2"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff") format("woff"), url("") format("truetype");
+-  font-style: normal;
+-  font-weight: 500;
++body{
++  font-family: 'ARS Maquette', sans-serif;
+ }
+-
+ /*** 3.0 - Menu ***/
+ .tnw-logo {
+   display: none;
+@@ -92,7 +87,7 @@
+ /*** 3.1 - Black Menu ***/
+ .black-menu {
+   align-items: center;
+-  font-family: "ARS Maquette";
++  font-family: "ARS Maquette", sans-serif;
+   width: 100vw;
+   height: 2em;
+   background-color: #000;
+@@ -126,7 +121,7 @@
+   display: flex;
+   height: 48px;
+   width: 100vw;
+-  font-family: "Shentox";
++  font-family: "Shentox", sans-serif;
+   font-weight: 500;
+   color: #aaa;
+ }
+@@ -196,14 +191,14 @@
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: " large-left-box  small-right-box-1"
+     " large-left-box  small-right-box-2";
+-  font-family: "Avalon";
++  font-family: "Avalon", sans-serif;
+   font-size: 2em;
+ }
+ 
+ .large-left-box {
+   height: 100%;
+   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-796x417.png
+-);
++  );
+   position: relative;
+   background-position: center;
+   background-size: cover;
+@@ -214,7 +209,7 @@
+   position: relative;
+   grid-area: small-right-box-1;
+   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-01.jpg
+-);
++  );
+   background-size: cover;
+ }
+ 
+@@ -223,14 +218,13 @@
+   background-size: cover;
+   grid-area: small-right-box-2;
+   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_2207d3f7-796x419.png
+-);
++  );
+ }
+ 
+ .logo img {
+   width: 400px;
+   position: absolute;
+-  margin-left: 20px;
+-  margin: 15px;
++  margin: 15px 15px 15px 20px;
+ }
+ 
+ .headline-link {
+@@ -238,10 +232,10 @@
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7049019436876314) 36%, rgba(246, 74, 24, 0.7021008232394521) 100%);
+   background-size: 100% 100%;
+   position: absolute;
+-  bottom: 0px;
+-  left: 0px;
+-  top: 0px;
+-  right: 0px;
++  bottom: 0;
++  left: 0;
++  top: 0;
++  right: 0;
+ }
+ 
+ .small-right-box-1 .headline-link {
+@@ -249,10 +243,10 @@
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 38%, rgba(255, 255, 255, 0) 100%);
+   background-size: 100% 100%;
+   position: absolute;
+-  bottom: 0px;
+-  left: 0px;
+-  top: 0px;
+-  right: 0px;
++  bottom: 0;
++  left: 0;
++  top: 0;
++  right: 0;
+ }
+ 
+ .small-right-box-2 .headline-link {
+@@ -260,17 +254,17 @@
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 38%, rgba(255, 255, 255, 0) 100%);
+   background-size: 100% 100%;
+   position: absolute;
+-  bottom: 0px;
+-  left: 0px;
+-  top: 0px;
+-  right: 0px;
++  bottom: 0;
++  left: 0;
++  top: 0;
++  right: 0;
+ }
+ 
+ .date {
+   color: #fff;
+   margin: 10px;
+   font-size: 0.5em;
+-  font-family: 'ARS Maquette';
++  font-family: 'ARS Maquette', sans-serif;
+   z-index: 9999;
+   position: absolute;
+   top: 4px;
+@@ -322,7 +316,7 @@
+ }
+ 
+ .section-heading {
+-  font-family: 'Avalon';
++  font-family: 'Avalon', sans-serif;
+   color: #f42;
+   text-decoration: none;
+ }
+@@ -344,7 +338,7 @@
+ }
+ 
+ .story-title-link {
+-  font-family: 'ARS Maquette';
++  font-family: 'ARS Maquette', sans-serif;
+   font-weight: 700;
+   line-height: 1em;
+   color: #000;
+@@ -352,7 +346,7 @@
+ }
+ 
+ .story-sub li {
+-  font-family: 'ARS Maquette';
++  font-family: 'ARS Maquette', sans-serif;
+   font-weight: 400;
+   font-size: 0.75em;
+   display: inline;
+@@ -373,7 +367,7 @@
+ 
+ .deals-right {
+   float: right;
+-  font-family: 'ARS Maquette';
++  font-family: 'ARS Maquette', sans-serif;
+   text-decoration: none;
+   color: #ff4422;
+   padding-top: 4px;
+@@ -388,7 +382,7 @@
+ 
+ #deals-heading {
+   display: inline;
+-  font-family: 'ARS Maquette';
++  font-family: 'ARS Maquette', sans-serif;
+   color: #ff4422;
+   font-weight: 700;
+ }
+@@ -405,7 +399,10 @@
+ 
+ .deal-header-link {
+   position: relative;
++  text-decoration: none;
++
+ }
++
+ .deal {
+   flex-basis: 25%;
+   max-width: 25%;
+@@ -418,12 +415,12 @@
+   max-width: 100%;
+ }
+ 
+- .deal-header-image  {
++.deal-header-image {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+-  margin: 10.6666666667px;
+-  top: 0;
++  margin: 10px;
++  top: 15px;
+   left: 0;
+   max-width: 60px;
+   z-index: 10;
+@@ -431,21 +428,26 @@
+ 
+ .deal-heading {
+   background: #f42;
+-  padding: 10.6666666667px 16px 10.6666666667px 84px;
++  padding: 10px 16px 10px 84px;
++  font-family: 'Avalon', sans-serif;
++  color :#fff;
+ }
+ 
+ .deal-funding {
+   background-color: #feeae6;
+-  padding: 10.6666666667px 16px 10.6666666667px 84px;
++  padding: 10px 16px 10px 84px;
++  font-family: 'Avalon', sans-serif;
++  color:#000;
+ }
+ 
+ .medical-tags {
++  font-family: 'ARS Maquette', sans-serif;
++  height: 70px;
+   display: block;
+   margin-top: 0;
+   background: #fffaf8;
+-  margin-bottom: 30px;
+   line-height: 30px;
+-  margin-left: 10px;
++  font-size: 14px;
+   border-bottom: 1px solid rgba(255, 68, 34, .25);
+ }
+ 
+@@ -455,53 +457,133 @@
+ }
+ 
+ .box-story {
++  height: 100px;
+   display: block;
+-  margin-top: 40px;
++  padding: 10px;
+   background: #fffaf8;
++  color:#555;
+   margin-bottom: 30px;
+   line-height: 20px;
+-  margin-left: 10px;
+   font-size: 12px;
+-  font-family: "ARS Maquette";
++  font-family: "ARS Maquette", sans-serif;
+ }
++
+ /* *    4.4 - Topics */
+ .topics {
+-  margin-top: 30px;
+-  flex: 1 0 33.333333%;
+-  box-sizing: border-box;
+-  padding: 10px;
+-  min-height: 600px;
+-  margin-left: 50px;
+-  flex: 1 0 33.333333%;
+-  box-sizing: border-box;
+-  padding: 10px;
+-  min-height: 600px;
++  max-width: 1192px;
++  margin: 0 auto;
++  padding: 0 20px;
++
++}
++.section-wrapper{
++  width: 100%;
++  display: flex;
++  flex-flow: row wrap;
++}
++
++.topic-section{
++  flex-basis: 33.33333%;
++  max-width: 33.3333%;
++  padding: 12px;
++  }
++.topic-title{
++  font-family: 'Avalon', sans-serif;
++  color: #ff4422;
++  font-size: 1.5em;
++}
++#topic1{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg");
++  background-size: cover;
++  height: 276px;
+ }
+-.board-1 {
+-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Super-Software-Bundle-540x270.jpg);
++#topic2{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
++  background-size: cover;
++  height: 276px;
++}
++
++#topic3{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
++  background-size: cover;
++  height: 276px;
++}
++
++#topic4{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
++  background-size: cover;
++  height: 276px;
++}
++
++#topic5{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
++  background-size: cover;
++  height: 276px;
++}
++
++#topic6{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
++  background-size: cover;
++  height: 276px;
++}
++
++#topic7{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
++  background-size: cover;
++  height: 276px;
++}
++
++#topic8{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
++  background-size: cover;
++  height: 276px;
++}
++
++#topic9{
++  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+   background-size: cover;
+-  background-repeat: no-repeat;
+-  background-position: center;
+-  min-height: 250px;
+-  min-width: 400px;
+-  max-width: 450px;
+-  max-height: 300px;
+-  margin-top: 15px;
+-  justify-content: flex-end;
++  height: 276px;
++}
++
++.topic-header{
++  box-sizing: content-box;
++  background: rgb(2,0,36);
++  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.19789922805059523) 100%);
++  height: 110px;
++  padding: 166px 10px 0 10px;
+   color: #fff;
+-
++  vertical-align: bottom;
+ }
+-.board-1-contents {
+-  display: block;
+-  top: 100px;
+-  position: relative;
+-
++.topic-header h5{
++  font-family: 'Shentox', sans-serif;
+ }
+-
+-
+-
+-
++.topic-header h3{
++  font-weight: 700;
++}
+ 
++.recent-topic{
++  margin-top: 2px;
++  display: flex;
++  flex-direction: row;
++  background: rgba(255,68,34,.06);
++}
+ 
++.recent-header{
++  flex-grow: 1;
++  flex-shrink: 1;
++  flex-basis: 0%;
++}
+ 
++.recent-image{
++  flex-grow: 0;
++  flex-shrink: 0;
++  flex-basis: 96px;
++}
++.recent-image img{
++  height: 100%;
++  object-fit: cover;
++}
++.topic-list{
++  border-bottom: 1px solid #eee;
++  color:#f42;
++}
+ /*** 5.0 - Footer ***/
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../css/style.css\">\n  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css\" integrity=\"sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==\" crossorigin=\"anonymous\" />\n  <title>Document</title>\n</head>\n\n<body>\n  <nav>\n    <div class=\"tnw-logo\"></div>\n    <ul class=\"black-menu\">\n      <li><a href=\"#\" id=\"first-item\">News</a></li>\n      <li><a href=\"#\">Events ▾</a></li>\n      <li><a href=\"#\">Bussiness ▾</a></li>\n      <li><a href=\"#\">AMAs</a></li>\n      <li><a href=\"#\">Spaces</a></li>\n      <li><a href=\"#\">Terms & Conditions</a></li>\n      <div class=\"corporate-menu\">\n        <li><a href=\"#\">About</a></li>\n        <li><a href=\"#\">Advertise</a></li>\n        <li><a href=\"#\">Jobs</a></li>\n        <li><a href=\"#\">Contact</a></li>\n      </div>\n    </ul>\n    <div class=\"main-menu\">\n      <ul class=\"menu\">\n        <li>LATEST</li>\n        <li>HARD FORK</li>\n        <li>PLUGGED</li>\n        <li>README</li>\n        <li>GROWTH QUARTERS</li>\n        <li>SHIFT</li>\n        <li>NEURAL</li>\n      </ul>\n      <div class=\"right-menu\">\n        <a href=\"#\" class=\"search-button\">\n          <svg width=\"16\" height=\"16\" viewbox=\"-7.5 992.5 16 16\" id=\"search\" x=\"832\" y=\"832\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path fill=\"#AAA\"\n              d=\"M-2.883 994.449c1.299-1.3 2.871-1.949 4.716-1.949 1.845 0 3.418.649 4.717 1.949 1.301 1.301 1.95 2.871 1.95 4.716s-.649 3.416-1.95 4.715c-1.299 1.301-2.872 1.952-4.717 1.952-.978 0-1.9-.201-2.765-.602l-4.018 2.95c-.356.266-.75.367-1.184.299a1.564 1.564 0 0 1-1.05-.633c-.212-.288-.316-.608-.316-.958s.104-.67.316-.957l2.95-4c-.4-.866-.6-1.788-.6-2.767.001-1.844.652-3.414 1.951-4.715zm1.416 8.014c.912.913 2.012 1.369 3.3 1.369 1.289 0 2.389-.456 3.3-1.369.911-.907 1.366-2.008 1.366-3.298 0-1.287-.455-2.389-1.366-3.301-.911-.909-2.011-1.364-3.3-1.364-1.289 0-2.389.455-3.3 1.364-.911.912-1.366 2.014-1.366 3.301 0 1.29.455 2.391 1.366 3.298z\" />\n          </svg></a>\n        <img alt=\"TNW2020\" id=\"tnw-logo\" src=\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/event-bl-tnw2020.svg\">\n        <p>IS HAPPENING NOW</p>\n        <button>GET TICKETS</button>\n      </div>\n    </div>\n\n  </nav>\n  <main>\n    <section class=\"cover\">\n      <div class=\"large-left-box\">\n\n        <a href=\"#\" class=\"headline-link\"></a>\n        <div class=\"logo\">\n          <img src=\"https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg\" alt=\"logo\">\n        </div>\n\n        <div class=\"date\">\n          Friday — October 2, 2020\n        </div>\n        <div class=\"headline\">\n          <h2>Insights</h2>\n          <h1>Yes,you can make money and still be etical</h1>\n          <div class=\"under-text\">\n            <p>by yessi bello perez <i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> 44 minutes ago <i class=\"fa fa-share-alt\" aria-hidden=\"true\"></i></p>\n          </div>\n        </div>\n      </div>\n      <div class=\"small-right-box-1\">\n        <a href=\"#\" class=\"headline-link\"></a>\n        <div class=\"headline\">\n          <h1>Join our 15th annual flagship event for free</h1>\n        </div>\n      </div>\n      <div class=\"small-right-box-2\">\n        <a href=\"#\" class=\"headline-link\"></a>\n        <div class=\"headline\">\n          <h2>Insights</h2>\n          <h1>Yes,you can make money and still <br>be etical</h1>\n          <div class=\"under-text\">\n            <p>by yessi bello perez <i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> 44 minutes ago <i class=\"fa fa-share-alt\" aria-hidden=\"true\"></i></p>\n          </div>\n        </div>\n\n      </div>\n    </section>\n    <section class=\"latest-news\">\n      <a class=\"section-heading\" href=\"#\">\n        <h2>Latest news ></h2>\n      </a>\n      <ul class=\"latest-flex\">\n        <li class=\"news\">\n          <div class=\"news-story\">\n            <a href=\"\" class=\"story-image\"><img src=\"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg\" alt=\"\"></a>\n            <h4 class=\"story-title\"><a href=\"\" class=\"story-title-link\">\n                Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’ </a></h4>\n            <ul class=\"story-sub\">\n              <li class=\"story-author\">Satoshi Nakaboto</li>\n              <li class=\"story-time\">1 hour ago</li>\n            </ul>\n          </div>\n        </li>\n        <li class=\"news\">\n          <div class=\"news-story\">\n            <a href=\"\" class=\"story-image\"><img src=\"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/coventry-government-uk-regulations-e-scooter-escooter-e-scooter-bike-rideshare-last-mile-480x270.png\" alt=\"\"></a>\n            <h4 class=\"story-title\"><a href=\"\" class=\"story-title-link\">The UK really wants escooters — but needs lots of rules because people are reckless </a></h4>\n            <ul class=\"story-sub\">\n              <li class=\"story-author\">Matthew Beedham</li>\n              <li class=\"story-time\">1 hour ago</li>\n            </ul>\n          </div>\n        </li>\n        <li class=\"news\">\n          <div class=\"news-story\">\n            <a href=\"\" class=\"story-image\"><img src=\"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Smash-Bros-Minecraft-516x270.jpg\" alt=\"\"></a>\n            <h4 class=\"story-title\"><a href=\"\" class=\"story-title-link\">Minecraft comes to Smash Bros... wait, what? </a></h4>\n            <ul class=\"story-sub\">\n              <li class=\"story-author\">Rachel Kaser</li>\n              <li class=\"story-time\">13 hours ago </li>\n            </ul>\n          </div>\n        </li>\n        <li class=\"news\">\n          <div class=\"news-story\">\n            <a href=\"\" class=\"story-image\"><img src=\"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Untitled-design-2020-10-01T165604.930-516x270.png\" alt=\"\"></a>\n            <h4 class=\"story-title\"><a href=\"\" class=\"story-title-link\">Twitter analysis suggests late nights make Trump angrier — and hurt his reelection odds</a></h4>\n            <ul class=\"story-sub\">\n              <li class=\"story-author\">Thomas Macaulay</li>\n              <li class=\"story-time\">16 hours ago</li>\n            </ul>\n          </div>\n        </li>\n        <li class=\"news\">\n          <div class=\"news-story\">\n            <a href=\"\" class=\"story-image\"><img src=\"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter-516x270.png\" alt=\"\"></a>\n            <h4 class=\"story-title\"><a href=\"\" class=\"story-title-link\">Yep, Twitter is down right now (Update: it's back) </a></h4>\n            <ul class=\"story-sub\">\n              <li class=\"story-author\">Mix</li>\n              <li class=\"story-time\">19 hours ago</li>\n            </ul>\n          </div>\n        </li>\n        <li class=\"news\">\n          <div class=\"news-story\">\n            <a href=\"\" class=\"story-image\"><img src=\"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Super-Software-Bundle-540x270.jpg\" alt=\"\"></a>\n            <h4 class=\"story-title\"><a href=\"\" class=\"story-title-link\">There’s a six-figure career in software development in your future. This training can be your gateway </a></h4>\n            <ul class=\"story-sub\">\n              <li class=\"story-author\">TNW Deals</li>\n              <li class=\"story-time\">19 hours ago</li>\n            </ul>\n          </div>\n        </li>\n        <li class=\"news\">\n          <div class=\"news-story\">\n            <a href=\"\" class=\"story-image\"><img src=\"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-516x270.png\" alt=\"\"></a>\n            <h4 class=\"story-title\"><a href=\"\" class=\"story-title-link\">Yes, you can make money and still be ethical </a></h4>\n            <ul class=\"story-sub\">\n              <li class=\"story-author\">Yessi Bello Perez</li>\n              <li class=\"story-time\">20 hours ago</li>\n            </ul>\n          </div>\n        </li>\n        <li class=\"news\">\n          <div class=\"news-story\">\n            <a href=\"\" class=\"story-image\"><img src=\"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Feature_15-427x270.jpg\" alt=\"\"></a>\n            <h4 class=\"story-title\"><a href=\"\" class=\"story-title-link\">The ARM-based Surface Pro X gets a faster processor and fancy colors </a></h4>\n            <ul class=\"story-sub\">\n              <li class=\"story-author\">Ivan Mehta</li>\n              <li class=\"story-time\">2 hours ago</li>\n            </ul>\n          </div>\n        </li>\n      </ul>\n    </section>\n    <section class=\"deals\">\n      <a href=\"#\" id=\"heading-link\">\n        <h2 id=\"deals-heading\">Latest funding rounds on Index.co ></h2>\n      </a>\n      <a href=\"#\" class=\"deals-right\">See more</a>\n      <a href=\"#\" class=\"deals-right\">Get updates by email</a>\n      <a href=\"#\" class=\"deals-right\">Add info</a>\n      <div class=\"deals-container\">\n        <div class=\"deal\">\n          <div class=\"deal-story\">\n            <a href=\"#\" class=\"deal-header-link\">\n              <img class=\"deal-header-image\" src=https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1181344816476516353%2F0FXJ7_nh.jpg&signature=dafb8ddbd01fd096c06320c645221cc1\" alt=\"\">\n              <h4 class=\"deal-heading\">iWEECARE Co., Ltd</h4>\n              <div class=\"deal-funding\">\n                <h4>$2.4M</h4>\n                <h5>Seed fund</h5>\n              </div>\n            </a>\n\n          </div>\n\n          <ul class=\"medical-tags\">\n            <li><i class=\"fa fa-tag\" aria-hidden=\"true\"></i>Medical</li>\n            <li><i class=\"fa fa-tag\" aria-hidden=\"true\"></i>Medical</li>\n          </ul>\n          <div class=\"box-story\">\n            <ul>\n              <li>iWEECARE Extends US$2.4M Pre-Series A</li>\n              <li>Financing on FinSMEs</li>\n            </ul>\n          </div>\n        </div>\n        <div class=\"deal\">\n          <div class=\"deal-story\">\n            <a href=\"#\" class=\"deal-header-link\">\n              <img class=\"deal-header-image\" src=\"https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Findex.co%2Fuploads%2Flogos%2F6feda6258ede36f13a42117d1b82b85c1bdcc1e6.png&signature=52f19d9bcf6f4c4b6a8efe31cf2e63f7\" alt=\"\">\n              <h4 class=\"deal-heading\">iWEECARE Co., Ltd</h4>\n              <div class=\"deal-funding\">\n                <h4>$2.4M</h4>\n                <h5>Seed fund</h5>\n              </div>\n            </a>\n\n          </div>\n\n          <ul class=\"medical-tags\">\n            <li><i class=\"fa fa-tag\" aria-hidden=\"true\"></i>Medical</li>\n            <li><i class=\"fa fa-tag\" aria-hidden=\"true\"></i>Medical</li>\n          </ul>\n          <div class=\"box-story\">\n            <ul>\n              <li>iWEECARE Extends US$2.4M Pre-Series A</li>\n              <li>Financing on FinSMEs</li>\n            </ul>\n          </div>\n        </div>\n        <div class=\"deal\">\n          <div class=\"deal-story\">\n            <a href=\"#\" class=\"deal-header-link\">\n              <img class=\"deal-header-image\" src=\"https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Findex.co%2Fuploads%2Flogos%2F8d15968e03502755394448840d4a82fc0736e612.png&signature=16b44069ca463ae7d015fe920d408c87\" alt=\"\">\n              <h4 class=\"deal-heading\">iWEECARE Co., Ltd</h4>\n              <div class=\"deal-funding\">\n                <h4>$2.4M</h4>\n                <h5>Seed fund</h5>\n              </div>\n            </a>\n\n          </div>\n\n          <ul class=\"medical-tags\">\n            <li><i class=\"fa fa-tag\" aria-hidden=\"true\"></i>Medical</li>\n            <li><i class=\"fa fa-tag\" aria-hidden=\"true\"></i>Medical</li>\n          </ul>\n          <div class=\"box-story\">\n            <ul>\n              <li>iWEECARE Extends US$2.4M Pre-Series A</li>\n              <li>Financing on FinSMEs</li>\n            </ul>\n          </div>\n        </div>\n        <div class=\"deal\">\n          <div class=\"deal-story\">\n            <a href=\"#\" class=\"deal-header-link\">\n              <img class=\"deal-header-image\" src=\"https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1141281301066108928%2Ffvl39hZi.png&signature=ae7d3820d507b800e45f748114f944a4\" alt=\"\">\n              <h4 class=\"deal-heading\">iWEECARE Co., Ltd</h4>\n              <div class=\"deal-funding\">\n                <h4>$2.4M</h4>\n                <h5>Seed fund</h5>\n              </div>\n            </a>\n\n          </div>\n\n          <ul class=\"medical-tags\">\n            <li><i class=\"fa fa-tag\" aria-hidden=\"true\"></i>Medical</li>\n            <li><i class=\"fa fa-tag\" aria-hidden=\"true\"></i>Medical</li>\n          </ul>\n          <div class=\"box-story\">\n            <ul>\n              <li>iWEECARE Extends US$2.4M Pre-Series A</li>\n              <li>Financing on FinSMEs</li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </section>\n    <section class=\"topics\">\n  <div class=\"section-wrapper\">\n    <div class=\"topics-header\">\n      <h1>FORKS</h1>\n      <div class=\"board-1\">\n        <div class=\"board-1-contents\">\n          <div class=\"topics-topic\">\n            <h2>Most popular</h2>\n          </div>\n          <div class=\"topics-flash\">\n            <h1>\n              Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’\n            </h1>\n          </div>\n          <div class=\"flash-time\">\n            <h5>satoshi nakaboto-11hours ago</h5>\n          </div>\n        </div>\n\n      </div>\n\n    </div>\n  </div>\n    </section>\n    <section class=\"ads-deals\"></section>\n  </main>\n  <footer>\n    <div class=\"social-menu\"></div>\n    <div class=\"legal\"></div>\n  </footer>\n\n</body>\n\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision 11015ed539ac1053bcefb91a97d1a78db9e97f60)
++++ index.html	(date 1601890256315)
+@@ -3,315 +3,553 @@
+ 
+ <head>
+   <meta charset="UTF-8">
+-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
++  <meta content="width=device-width, initial-scale=1.0" name="viewport">
++  <meta content="ie=edge" http-equiv="X-UA-Compatible">
++  <link href="css/style.css" rel="stylesheet" type="text/css">
++  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
++        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
++        rel="stylesheet"/>
+   <title>Document</title>
+ </head>
+ 
+ <body>
+-  <nav>
+-    <div class="tnw-logo"></div>
+-    <ul class="black-menu">
+-      <li><a href="#" id="first-item">News</a></li>
+-      <li><a href="#">Events ▾</a></li>
+-      <li><a href="#">Bussiness ▾</a></li>
+-      <li><a href="#">AMAs</a></li>
+-      <li><a href="#">Spaces</a></li>
+-      <li><a href="#">Terms & Conditions</a></li>
+-      <div class="corporate-menu">
+-        <li><a href="#">About</a></li>
+-        <li><a href="#">Advertise</a></li>
+-        <li><a href="#">Jobs</a></li>
+-        <li><a href="#">Contact</a></li>
+-      </div>
+-    </ul>
+-    <div class="main-menu">
+-      <ul class="menu">
+-        <li>LATEST</li>
+-        <li>HARD FORK</li>
+-        <li>PLUGGED</li>
+-        <li>README</li>
+-        <li>GROWTH QUARTERS</li>
+-        <li>SHIFT</li>
+-        <li>NEURAL</li>
+-      </ul>
+-      <div class="right-menu">
+-        <a href="#" class="search-button">
+-          <svg width="16" height="16" viewbox="-7.5 992.5 16 16" id="search" x="832" y="832" xmlns="http://www.w3.org/2000/svg">
+-            <path fill="#AAA"
+-              d="M-2.883 994.449c1.299-1.3 2.871-1.949 4.716-1.949 1.845 0 3.418.649 4.717 1.949 1.301 1.301 1.95 2.871 1.95 4.716s-.649 3.416-1.95 4.715c-1.299 1.301-2.872 1.952-4.717 1.952-.978 0-1.9-.201-2.765-.602l-4.018 2.95c-.356.266-.75.367-1.184.299a1.564 1.564 0 0 1-1.05-.633c-.212-.288-.316-.608-.316-.958s.104-.67.316-.957l2.95-4c-.4-.866-.6-1.788-.6-2.767.001-1.844.652-3.414 1.951-4.715zm1.416 8.014c.912.913 2.012 1.369 3.3 1.369 1.289 0 2.389-.456 3.3-1.369.911-.907 1.366-2.008 1.366-3.298 0-1.287-.455-2.389-1.366-3.301-.911-.909-2.011-1.364-3.3-1.364-1.289 0-2.389.455-3.3 1.364-.911.912-1.366 2.014-1.366 3.301 0 1.29.455 2.391 1.366 3.298z" />
+-          </svg></a>
+-        <img alt="TNW2020" id="tnw-logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/event-bl-tnw2020.svg">
+-        <p>IS HAPPENING NOW</p>
+-        <button>GET TICKETS</button>
+-      </div>
+-    </div>
++<nav>
++  <div class="tnw-logo"></div>
++  <ul class="black-menu">
++    <li><a href="#" id="first-item">News</a></li>
++    <li><a href="#">Events ▾</a></li>
++    <li><a href="#">Bussiness ▾</a></li>
++    <li><a href="#">AMAs</a></li>
++    <li><a href="#">Spaces</a></li>
++    <li><a href="#">Terms & Conditions</a></li>
++    <div class="corporate-menu">
++      <li><a href="#">About</a></li>
++      <li><a href="#">Advertise</a></li>
++      <li><a href="#">Jobs</a></li>
++      <li><a href="#">Contact</a></li>
++    </div>
++  </ul>
++  <div class="main-menu">
++    <ul class="menu">
++      <li>LATEST</li>
++      <li>HARD FORK</li>
++      <li>PLUGGED</li>
++      <li>README</li>
++      <li>GROWTH QUARTERS</li>
++      <li>SHIFT</li>
++      <li>NEURAL</li>
++    </ul>
++    <div class="right-menu">
++      <a class="search-button" href="#">
++        <svg height="16" id="search" viewbox="-7.5 992.5 16 16" width="16" x="832" xmlns="http://www.w3.org/2000/svg"
++             y="832">
++          <path d="M-2.883 994.449c1.299-1.3 2.871-1.949 4.716-1.949 1.845 0 3.418.649 4.717 1.949 1.301 1.301 1.95 2.871 1.95 4.716s-.649 3.416-1.95 4.715c-1.299 1.301-2.872 1.952-4.717 1.952-.978 0-1.9-.201-2.765-.602l-4.018 2.95c-.356.266-.75.367-1.184.299a1.564 1.564 0 0 1-1.05-.633c-.212-.288-.316-.608-.316-.958s.104-.67.316-.957l2.95-4c-.4-.866-.6-1.788-.6-2.767.001-1.844.652-3.414 1.951-4.715zm1.416 8.014c.912.913 2.012 1.369 3.3 1.369 1.289 0 2.389-.456 3.3-1.369.911-.907 1.366-2.008 1.366-3.298 0-1.287-.455-2.389-1.366-3.301-.911-.909-2.011-1.364-3.3-1.364-1.289 0-2.389.455-3.3 1.364-.911.912-1.366 2.014-1.366 3.301 0 1.29.455 2.391 1.366 3.298z"
++                fill="#AAA"/>
++        </svg>
++      </a>
++      <img alt="TNW2020" id="tnw-logo"
++           src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/misc/event-bl-tnw2020.svg">
++      <p>IS HAPPENING NOW</p>
++      <button>GET TICKETS</button>
++    </div>
++  </div>
+ 
+-  </nav>
+-  <main>
+-    <section class="cover">
+-      <div class="large-left-box">
++</nav>
++<main>
++  <section class="cover">
++    <div class="large-left-box">
+ 
+-        <a href="#" class="headline-link"></a>
+-        <div class="logo">
+-          <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="logo">
+-        </div>
++      <a class="headline-link" href="#"></a>
++      <div class="logo">
++        <img alt="logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
++      </div>
+ 
+-        <div class="date">
+-          Friday — October 2, 2020
+-        </div>
+-        <div class="headline">
+-          <h2>Insights</h2>
+-          <h1>Yes,you can make money and still be etical</h1>
+-          <div class="under-text">
+-            <p>by yessi bello perez <i class="fa fa-clock-o" aria-hidden="true"></i> 44 minutes ago <i class="fa fa-share-alt" aria-hidden="true"></i></p>
+-          </div>
+-        </div>
+-      </div>
+-      <div class="small-right-box-1">
+-        <a href="#" class="headline-link"></a>
+-        <div class="headline">
+-          <h1>Join our 15th annual flagship event for free</h1>
+-        </div>
+-      </div>
+-      <div class="small-right-box-2">
+-        <a href="#" class="headline-link"></a>
+-        <div class="headline">
+-          <h2>Insights</h2>
+-          <h1>Yes,you can make money and still <br>be etical</h1>
+-          <div class="under-text">
+-            <p>by yessi bello perez <i class="fa fa-clock-o" aria-hidden="true"></i> 44 minutes ago <i class="fa fa-share-alt" aria-hidden="true"></i></p>
+-          </div>
+-        </div>
++      <div class="date">
++        Friday — October 2, 2020
++      </div>
++      <div class="headline">
++        <h2>Insights</h2>
++        <h1>Yes,you can make money and still be etical</h1>
++        <div class="under-text">
++          <p>by yessi bello perez <i aria-hidden="true" class="fa fa-clock-o"></i> 44 minutes ago <i
++                  aria-hidden="true" class="fa fa-share-alt"></i></p>
++        </div>
++      </div>
++    </div>
++    <div class="small-right-box-1">
++      <a class="headline-link" href="#"></a>
++      <div class="headline">
++        <h1>Join our 15th annual flagship event for free</h1>
++      </div>
++    </div>
++    <div class="small-right-box-2">
++      <a class="headline-link" href="#"></a>
++      <div class="headline">
++        <h2>Insights</h2>
++        <h1>Yes,you can make money and still <br>be etical</h1>
++        <div class="under-text">
++          <p>by yessi bello perez <i aria-hidden="true" class="fa fa-clock-o"></i> 44 minutes ago <i
++                  aria-hidden="true" class="fa fa-share-alt"></i></p>
++        </div>
++      </div>
+ 
+-      </div>
+-    </section>
+-    <section class="latest-news">
+-      <a class="section-heading" href="#">
+-        <h2>Latest news ></h2>
+-      </a>
+-      <ul class="latest-flex">
+-        <li class="news">
+-          <div class="news-story">
+-            <a href="" class="story-image"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg" alt=""></a>
+-            <h4 class="story-title"><a href="" class="story-title-link">
+-                Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’ </a></h4>
+-            <ul class="story-sub">
+-              <li class="story-author">Satoshi Nakaboto</li>
+-              <li class="story-time">1 hour ago</li>
+-            </ul>
+-          </div>
+-        </li>
+-        <li class="news">
+-          <div class="news-story">
+-            <a href="" class="story-image"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/coventry-government-uk-regulations-e-scooter-escooter-e-scooter-bike-rideshare-last-mile-480x270.png" alt=""></a>
+-            <h4 class="story-title"><a href="" class="story-title-link">The UK really wants escooters — but needs lots of rules because people are reckless </a></h4>
+-            <ul class="story-sub">
+-              <li class="story-author">Matthew Beedham</li>
+-              <li class="story-time">1 hour ago</li>
+-            </ul>
+-          </div>
+-        </li>
+-        <li class="news">
+-          <div class="news-story">
+-            <a href="" class="story-image"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Smash-Bros-Minecraft-516x270.jpg" alt=""></a>
+-            <h4 class="story-title"><a href="" class="story-title-link">Minecraft comes to Smash Bros... wait, what? </a></h4>
+-            <ul class="story-sub">
+-              <li class="story-author">Rachel Kaser</li>
+-              <li class="story-time">13 hours ago </li>
+-            </ul>
+-          </div>
+-        </li>
+-        <li class="news">
+-          <div class="news-story">
+-            <a href="" class="story-image"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Untitled-design-2020-10-01T165604.930-516x270.png" alt=""></a>
+-            <h4 class="story-title"><a href="" class="story-title-link">Twitter analysis suggests late nights make Trump angrier — and hurt his reelection odds</a></h4>
+-            <ul class="story-sub">
+-              <li class="story-author">Thomas Macaulay</li>
+-              <li class="story-time">16 hours ago</li>
+-            </ul>
+-          </div>
+-        </li>
+-        <li class="news">
+-          <div class="news-story">
+-            <a href="" class="story-image"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter-516x270.png" alt=""></a>
+-            <h4 class="story-title"><a href="" class="story-title-link">Yep, Twitter is down right now (Update: it's back) </a></h4>
+-            <ul class="story-sub">
+-              <li class="story-author">Mix</li>
+-              <li class="story-time">19 hours ago</li>
+-            </ul>
+-          </div>
+-        </li>
+-        <li class="news">
+-          <div class="news-story">
+-            <a href="" class="story-image"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Super-Software-Bundle-540x270.jpg" alt=""></a>
+-            <h4 class="story-title"><a href="" class="story-title-link">There’s a six-figure career in software development in your future. This training can be your gateway </a></h4>
+-            <ul class="story-sub">
+-              <li class="story-author">TNW Deals</li>
+-              <li class="story-time">19 hours ago</li>
+-            </ul>
+-          </div>
+-        </li>
+-        <li class="news">
+-          <div class="news-story">
+-            <a href="" class="story-image"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-516x270.png" alt=""></a>
+-            <h4 class="story-title"><a href="" class="story-title-link">Yes, you can make money and still be ethical </a></h4>
+-            <ul class="story-sub">
+-              <li class="story-author">Yessi Bello Perez</li>
+-              <li class="story-time">20 hours ago</li>
+-            </ul>
+-          </div>
+-        </li>
+-        <li class="news">
+-          <div class="news-story">
+-            <a href="" class="story-image"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Feature_15-427x270.jpg" alt=""></a>
+-            <h4 class="story-title"><a href="" class="story-title-link">The ARM-based Surface Pro X gets a faster processor and fancy colors </a></h4>
+-            <ul class="story-sub">
+-              <li class="story-author">Ivan Mehta</li>
+-              <li class="story-time">2 hours ago</li>
+-            </ul>
+-          </div>
+-        </li>
+-      </ul>
+-    </section>
+-    <section class="deals">
+-      <a href="#" id="heading-link">
+-        <h2 id="deals-heading">Latest funding rounds on Index.co ></h2>
+-      </a>
+-      <a href="#" class="deals-right">See more</a>
+-      <a href="#" class="deals-right">Get updates by email</a>
+-      <a href="#" class="deals-right">Add info</a>
+-      <div class="deals-container">
+-        <div class="deal">
+-          <div class="deal-story">
+-            <a href="#" class="deal-header-link">
+-              <img class="deal-header-image" src=https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1181344816476516353%2F0FXJ7_nh.jpg&signature=dafb8ddbd01fd096c06320c645221cc1" alt="">
+-              <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
+-              <div class="deal-funding">
+-                <h4>$2.4M</h4>
+-                <h5>Seed fund</h5>
+-              </div>
+-            </a>
+-
+-          </div>
+-
++    </div>
++  </section>
++  <section class="latest-news">
++    <a class="section-heading" href="#">
++      <h2>Latest news ></h2>
++    </a>
++    <ul class="latest-flex">
++      <li class="news">
++        <div class="news-story">
++          <a class="story-image" href=""><img
++                  alt=""
++                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg"></a>
++          <h4 class="story-title"><a class="story-title-link" href="">
++            Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in
++            September’ </a></h4>
++          <ul class="story-sub">
++            <li class="story-author">Satoshi Nakaboto</li>
++            <li class="story-time">1 hour ago</li>
++          </ul>
++        </div>
++      </li>
++      <li class="news">
++        <div class="news-story">
++          <a class="story-image" href=""><img
++                  alt=""
++                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/coventry-government-uk-regulations-e-scooter-escooter-e-scooter-bike-rideshare-last-mile-480x270.png"></a>
++          <h4 class="story-title"><a class="story-title-link" href="">The UK really wants escooters — but
++            needs lots of rules because people are reckless </a></h4>
++          <ul class="story-sub">
++            <li class="story-author">Matthew Beedham</li>
++            <li class="story-time">1 hour ago</li>
++          </ul>
++        </div>
++      </li>
++      <li class="news">
++        <div class="news-story">
++          <a class="story-image" href=""><img
++                  alt=""
++                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Smash-Bros-Minecraft-516x270.jpg"></a>
++          <h4 class="story-title"><a class="story-title-link" href="">Minecraft comes to Smash Bros... wait,
++            what? </a></h4>
++          <ul class="story-sub">
++            <li class="story-author">Rachel Kaser</li>
++            <li class="story-time">13 hours ago</li>
++          </ul>
++        </div>
++      </li>
++      <li class="news">
++        <div class="news-story">
++          <a class="story-image" href=""><img
++                  alt=""
++                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Untitled-design-2020-10-01T165604.930-516x270.png"></a>
++          <h4 class="story-title"><a class="story-title-link" href="">Twitter analysis suggests late nights
++            make Trump angrier — and hurt his reelection odds</a></h4>
++          <ul class="story-sub">
++            <li class="story-author">Thomas Macaulay</li>
++            <li class="story-time">16 hours ago</li>
++          </ul>
++        </div>
++      </li>
++      <li class="news">
++        <div class="news-story">
++          <a class="story-image" href=""><img
++                  alt=""
++                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter-516x270.png"></a>
++          <h4 class="story-title"><a class="story-title-link" href="">Yep, Twitter is down right now (Update:
++            it's back) </a></h4>
++          <ul class="story-sub">
++            <li class="story-author">Mix</li>
++            <li class="story-time">19 hours ago</li>
++          </ul>
++        </div>
++      </li>
++      <li class="news">
++        <div class="news-story">
++          <a class="story-image" href=""><img
++                  alt=""
++                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Super-Software-Bundle-540x270.jpg"></a>
++          <h4 class="story-title"><a class="story-title-link" href="">There’s a six-figure career in software
++            development in your future. This training can be your gateway </a></h4>
++          <ul class="story-sub">
++            <li class="story-author">TNW Deals</li>
++            <li class="story-time">19 hours ago</li>
++          </ul>
++        </div>
++      </li>
++      <li class="news">
++        <div class="news-story">
++          <a class="story-image" href=""><img
++                  alt=""
++                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-516x270.png"></a>
++          <h4 class="story-title"><a class="story-title-link" href="">Yes, you can make money and still be
++            ethical </a></h4>
++          <ul class="story-sub">
++            <li class="story-author">Yessi Bello Perez</li>
++            <li class="story-time">20 hours ago</li>
++          </ul>
++        </div>
++      </li>
++      <li class="news">
++        <div class="news-story">
++          <a class="story-image" href=""><img
++                  alt=""
++                  src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Feature_15-427x270.jpg"></a>
++          <h4 class="story-title"><a class="story-title-link" href="">The ARM-based Surface Pro X gets a
++            faster processor and fancy colors </a></h4>
++          <ul class="story-sub">
++            <li class="story-author">Ivan Mehta</li>
++            <li class="story-time">2 hours ago</li>
++          </ul>
++        </div>
++      </li>
++    </ul>
++  </section>
++  <section class="deals">
++    <a href="#" id="heading-link">
++      <h2 id="deals-heading">Latest funding rounds on Index.co ></h2>
++    </a>
++    <a class="deals-right" href="#">See more</a>
++    <a class="deals-right" href="#">Get updates by email</a>
++    <a class="deals-right" href="#">Add info</a>
++    <div class="deals-container">
++      <div class="deal">
++        <div class="deal-story">
++          <a class="deal-header-link" href="#">
++            <img alt=""
++                 class="deal-header-image"
++                 src=https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1181344816476516353%2F0FXJ7_nh.jpg&signature=dafb8ddbd01fd096c06320c645221cc1">
++            <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
++            <div class="deal-funding">
++              <h4>$2.4M</h4>
++              <h5>Seed fund</h5>
++            </div>
++          </a>
+           <ul class="medical-tags">
+-            <li><i class="fa fa-tag" aria-hidden="true"></i>Medical</li>
+-            <li><i class="fa fa-tag" aria-hidden="true"></i>Medical</li>
++            <li><i aria-hidden="true" class="fa fa-tag"></i> Information Technology, +3</li>
++            <li><i aria-hidden="true" class="fa fa-tag"></i> Hyde Park Venture Partners, +3</li>
+           </ul>
+           <div class="box-story">
+-            <ul>
+-              <li>iWEECARE Extends US$2.4M Pre-Series A</li>
+-              <li>Financing on FinSMEs</li>
+-            </ul>
++           <p>
++             Indianapolis-based Malomo raises $2.8 million to turn order tracking into a branded customer experience </p>
+           </div>
+         </div>
+-        <div class="deal">
+-          <div class="deal-story">
+-            <a href="#" class="deal-header-link">
+-              <img class="deal-header-image" src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Findex.co%2Fuploads%2Flogos%2F6feda6258ede36f13a42117d1b82b85c1bdcc1e6.png&signature=52f19d9bcf6f4c4b6a8efe31cf2e63f7" alt="">
+-              <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
+-              <div class="deal-funding">
+-                <h4>$2.4M</h4>
+-                <h5>Seed fund</h5>
+-              </div>
+-            </a>
+-
+-          </div>
+-
++      </div>
++      <div class="deal">
++        <div class="deal-story">
++          <a class="deal-header-link" href="#">
++            <img alt=""
++                 class="deal-header-image"
++                 src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Findex.co%2Fuploads%2Flogos%2F6feda6258ede36f13a42117d1b82b85c1bdcc1e6.png&signature=52f19d9bcf6f4c4b6a8efe31cf2e63f7">
++            <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
++            <div class="deal-funding">
++              <h4>$2.4M</h4>
++              <h5>Seed fund</h5>
++            </div>
++          </a>
+           <ul class="medical-tags">
+-            <li><i class="fa fa-tag" aria-hidden="true"></i>Medical</li>
+-            <li><i class="fa fa-tag" aria-hidden="true"></i>Medical</li>
++            <li><i aria-hidden="true" class="fa fa-tag"></i>Medical</li>
++            <li><i aria-hidden="true" class="fa fa-tag"></i>Medical</li>
+           </ul>
+           <div class="box-story">
+-            <ul>
+-              <li>iWEECARE Extends US$2.4M Pre-Series A</li>
+-              <li>Financing on FinSMEs</li>
+-            </ul>
++            <p>iWEECARE Extends US$2.4M Pre-Series A</p>
++            <p>Financing on FinSMEs</p>
+           </div>
+         </div>
+-        <div class="deal">
+-          <div class="deal-story">
+-            <a href="#" class="deal-header-link">
+-              <img class="deal-header-image" src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Findex.co%2Fuploads%2Flogos%2F8d15968e03502755394448840d4a82fc0736e612.png&signature=16b44069ca463ae7d015fe920d408c87" alt="">
+-              <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
+-              <div class="deal-funding">
+-                <h4>$2.4M</h4>
+-                <h5>Seed fund</h5>
+-              </div>
+-            </a>
+-
+-          </div>
+-
++      </div>
++      <div class="deal">
++        <div class="deal-story">
++          <a class="deal-header-link" href="#">
++            <img alt=""
++                 class="deal-header-image"
++                 src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Findex.co%2Fuploads%2Flogos%2F8d15968e03502755394448840d4a82fc0736e612.png&signature=16b44069ca463ae7d015fe920d408c87">
++            <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
++            <div class="deal-funding">
++              <h4>$2.4M</h4>
++              <h5>Seed fund</h5>
++            </div>
++          </a>
+           <ul class="medical-tags">
+-            <li><i class="fa fa-tag" aria-hidden="true"></i>Medical</li>
+-            <li><i class="fa fa-tag" aria-hidden="true"></i>Medical</li>
++            <li><i aria-hidden="true" class="fa fa-tag"></i>Medical</li>
++            <li><i aria-hidden="true" class="fa fa-tag"></i>Medical</li>
+           </ul>
+           <div class="box-story">
+-            <ul>
+-              <li>iWEECARE Extends US$2.4M Pre-Series A</li>
+-              <li>Financing on FinSMEs</li>
+-            </ul>
++            <p>iWEECARE Extends US$2.4M Pre-Series A</p>
++            <p>Financing on FinSMEs</p>
+           </div>
+         </div>
+-        <div class="deal">
+-          <div class="deal-story">
+-            <a href="#" class="deal-header-link">
+-              <img class="deal-header-image" src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1141281301066108928%2Ffvl39hZi.png&signature=ae7d3820d507b800e45f748114f944a4" alt="">
+-              <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
+-              <div class="deal-funding">
+-                <h4>$2.4M</h4>
+-                <h5>Seed fund</h5>
+-              </div>
+-            </a>
+-
+-          </div>
+-
++      </div>
++      <div class="deal">
++        <div class="deal-story">
++          <a class="deal-header-link" href="#">
++            <img alt=""
++                 class="deal-header-image"
++                 src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1141281301066108928%2Ffvl39hZi.png&signature=ae7d3820d507b800e45f748114f944a4">
++            <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
++            <div class="deal-funding">
++              <h4>$2.4M</h4>
++              <h5>Seed fund</h5>
++            </div>
++          </a>
+           <ul class="medical-tags">
+-            <li><i class="fa fa-tag" aria-hidden="true"></i>Medical</li>
+-            <li><i class="fa fa-tag" aria-hidden="true"></i>Medical</li>
++            <li><i aria-hidden="true" class="fa fa-tag"></i>Medical</li>
++            <li><i aria-hidden="true" class="fa fa-tag"></i>Medical</li>
+           </ul>
+           <div class="box-story">
+-            <ul>
+-              <li>iWEECARE Extends US$2.4M Pre-Series A</li>
+-              <li>Financing on FinSMEs</li>
+-            </ul>
++            <p>iWEECARE Extends US$2.4M Pre-Series A</p>
++            <p>Financing on FinSMEs</p>
++          </div>
++        </div>
++      </div>
++    </div>
++  </section>
++  <div class="topics">
++    <div class="section-wrapper">
++      <section class="topic-section">
++        <h2 class="topic-title">Hard Fork ></h2>
++        <div id="topic1">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’</h3>
++            <h6>Satoshi Nakaboto . 3 days ago
++            </h6>
++          </div>
++        </div>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>
++        </ul>
++      </section>
++      <section class="topic-section">
++        <h2 class="topic-title">Distract ></h2>
++        <div id="topic2">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>Lynk & Co.'s car sharing-owning scheme will never cost more than €500 a month</h3>
++            <h6>Satoshi Nakaboto . 3 days ago\
++          </div>
++        </div>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>
++        </ul>
++      </section>
++      <section class="topic-section">
++        <h2 class="topic-title">Apps ></h2>
++        <div id="topic3">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>Call of Duty: Warzone Season 6 riddled with crashes and silly subway bugs</h3>
++            <h6>Satoshi Nakaboto . 3 days ago
+           </div>
+         </div>
+-      </div>
+-    </section>
+-    <section class="topics">
+-  <div class="section-wrapper">
+-    <div class="topics-header">
+-      <h1>FORKS</h1>
+-      <div class="board-1">
+-        <div class="board-1-contents">
+-          <div class="topics-topic">
+-            <h2>Most popular</h2>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>
++        </ul>
++      </section>
++      <section class="topic-section">
++        <h2 class="topic-title">Gear ></h2>
++        <div id="topic4">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>Google Maps adds new AR tools to help you get around town</h3>
++            <h6>Satoshi Nakaboto . 3 days ago
++          </div>
++        </div>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>        </ul>
++      </section>
++      <section class="topic-section">
++        <h2 class="topic-title">Tech ></h2>
++        <div id="topic5">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>The ARM-based Surface Pro X gets a faster processor and fancy colors</h3>
++            <h6>Satoshi Nakaboto . 3 days ago
++          </div>
++        </div>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>
++        </ul>
++      </section>
++      <section class="topic-section">
++        <h2 class="topic-title">Creative ></h2>
++        <div id="topic6">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>Women equal men in computing skill, but are less confident</h3>
++            <h6>Satoshi Nakaboto . 3 days ago
++          </div>
++        </div>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>
++        </ul>
++      </section>
++      <section class="topic-section">
++        <h2 class="topic-title">Podium ></h2>
++        <div id="topic7">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>Graphic design apps are now as fundamental as Excel — here's how non-designers get up to speed</h3>
++            <h6>Satoshi Nakaboto . 3 days ago
+           </div>
+-          <div class="topics-flash">
+-            <h1>
+-              Satoshi Nakaboto: ‘Ethereum miners were 6x more profitable than Bitcoin miners in September’
+-            </h1>
+-          </div>
+-          <div class="flash-time">
+-            <h5>satoshi nakaboto-11hours ago</h5>
++        </div>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>
++
++        </ul>
++      </section>
++      <section class="topic-section">
++        <h2 class="topic-title">Insights ></h2>
++        <div id="topic8">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>Mixed reality is perfect for our innate multitasking habits</h3>
++            <h6>Satoshi Nakaboto . 3 days ago
+           </div>
+         </div>
+-
+-      </div>
+-
+-    </div>
+-  </div>
+-    </section>
+-    <section class="ads-deals"></section>
+-  </main>
+-  <footer>
+-    <div class="social-menu"></div>
+-    <div class="legal"></div>
+-  </footer>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>
++        </ul>
++      </section>
++      <section class="topic-section">
++        <h2 class="topic-title">Launch ></h2>
++        <div id="topic9">
++          <div class="topic-header">
++            <h5>MOST POPULAR</h5>
++            <h3>Beauty is in the app of the beholder</h3>
++            <h6>Satoshi Nakaboto . 3 days ago
++          </div>
++        </div>
++        <ul>
++          <li>
++            <div class="recent-topic">
++              <header class="recent-header">
++                <h5>LATEST</h5>
++                <h4>Fujitsu apologizes after Tokyo Stock Exchange suffers worst 'crash' in history</h4>
++              </header>
++              <a class="recent-image" href="#"><img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/twitter.png" alt=""></a>
++            </div>
++          </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Jack Dorsey slams Coinbase CEO for overlooking its users' societal issues’ </li>
++          <li class="topic-list"> Satoshi Nakaboto: ‘Bitcoin and blockchain tech are the future of Twitter, Jack Dorsey says’ </li>
++          <li class="topic-list">Satoshi Nakaboto: ‘Grayscale now owns 2.5% of Bitcoin’s total supply’ </li>
++          <li class="topic-list">Elon Musk says retail investors will get 'top priority' for Starlink IPO </li>
++          <li class="topic-list"> Zoom execs dumped $580M of stock as its share price rose 622% </li>
++        </ul>
++      </section>
++    </div>
++  </div>
++  <section class="ads-deals"></section>
++</main>
++<footer>
++  <div class="social-menu"></div>
++  <div class="legal"></div>
++</footer>
+ 
+ </body>
+ 
