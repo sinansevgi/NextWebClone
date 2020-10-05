@@ -71,14 +71,9 @@ img {
   font-style: normal;
   font-weight: 700;
 }
-
-@font-face {
-  font-family: Shentox;
-  src: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix") format("embedded-opentype"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2") format("woff2"), url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff") format("woff"), url("") format("truetype");
-  font-style: normal;
-  font-weight: 500;
+body{
+  font-family: 'ARS Maquette', sans-serif;
 }
-
 /*** 3.0 - Menu ***/
 .tnw-logo {
   display: none;
@@ -92,7 +87,7 @@ nav {
 /*** 3.1 - Black Menu ***/
 .black-menu {
   align-items: center;
-  font-family: "ARS Maquette";
+  font-family: "ARS Maquette", sans-serif;
   width: 100vw;
   height: 2em;
   background-color: #000;
@@ -126,7 +121,7 @@ nav {
   display: flex;
   height: 48px;
   width: 100vw;
-  font-family: "Shentox";
+  font-family: "Shentox", sans-serif;
   font-weight: 500;
   color: #aaa;
 }
@@ -196,14 +191,14 @@ nav {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: " large-left-box  small-right-box-1"
     " large-left-box  small-right-box-2";
-  font-family: "Avalon";
+  font-family: "Avalon", sans-serif;
   font-size: 2em;
 }
 
 .large-left-box {
   height: 100%;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-796x417.png
-);
+  );
   position: relative;
   background-position: center;
   background-size: cover;
@@ -214,7 +209,7 @@ nav {
   position: relative;
   grid-area: small-right-box-1;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/tnw2020-feature_img-01.jpg
-);
+  );
   background-size: cover;
 }
 
@@ -223,14 +218,13 @@ nav {
   background-size: cover;
   grid-area: small-right-box-2;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_2207d3f7-796x419.png
-);
+  );
 }
 
 .logo img {
   width: 400px;
   position: absolute;
-  margin-left: 20px;
-  margin: 15px;
+  margin: 15px 15px 15px 20px;
 }
 
 .headline-link {
@@ -238,10 +232,10 @@ nav {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7049019436876314) 36%, rgba(246, 74, 24, 0.7021008232394521) 100%);
   background-size: 100% 100%;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  top: 0px;
-  right: 0px;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 .small-right-box-1 .headline-link {
@@ -249,10 +243,10 @@ nav {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 38%, rgba(255, 255, 255, 0) 100%);
   background-size: 100% 100%;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  top: 0px;
-  right: 0px;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 .small-right-box-2 .headline-link {
@@ -260,17 +254,17 @@ nav {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 38%, rgba(255, 255, 255, 0) 100%);
   background-size: 100% 100%;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  top: 0px;
-  right: 0px;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 .date {
   color: #fff;
   margin: 10px;
   font-size: 0.5em;
-  font-family: 'ARS Maquette';
+  font-family: 'ARS Maquette', sans-serif;
   z-index: 9999;
   position: absolute;
   top: 4px;
@@ -322,7 +316,7 @@ nav {
 }
 
 .section-heading {
-  font-family: 'Avalon';
+  font-family: 'Avalon', sans-serif;
   color: #f42;
   text-decoration: none;
 }
@@ -344,7 +338,7 @@ nav {
 }
 
 .story-title-link {
-  font-family: 'ARS Maquette';
+  font-family: 'ARS Maquette', sans-serif;
   font-weight: 700;
   line-height: 1em;
   color: #000;
@@ -352,7 +346,7 @@ nav {
 }
 
 .story-sub li {
-  font-family: 'ARS Maquette';
+  font-family: 'ARS Maquette', sans-serif;
   font-weight: 400;
   font-size: 0.75em;
   display: inline;
@@ -373,7 +367,7 @@ nav {
 
 .deals-right {
   float: right;
-  font-family: 'ARS Maquette';
+  font-family: 'ARS Maquette', sans-serif;
   text-decoration: none;
   color: #ff4422;
   padding-top: 4px;
@@ -388,7 +382,7 @@ nav {
 
 #deals-heading {
   display: inline;
-  font-family: 'ARS Maquette';
+  font-family: 'ARS Maquette', sans-serif;
   color: #ff4422;
   font-weight: 700;
 }
@@ -405,7 +399,10 @@ nav {
 
 .deal-header-link {
   position: relative;
+  text-decoration: none;
+
 }
+
 .deal {
   flex-basis: 25%;
   max-width: 25%;
@@ -418,12 +415,12 @@ nav {
   max-width: 100%;
 }
 
- .deal-header-image  {
+.deal-header-image {
   width: 60px;
   height: 60px;
   position: absolute;
-  margin: 10.6666666667px;
-  top: 0;
+  margin: 10px;
+  top: 15px;
   left: 0;
   max-width: 60px;
   z-index: 10;
@@ -431,21 +428,26 @@ nav {
 
 .deal-heading {
   background: #f42;
-  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  padding: 10px 16px 10px 84px;
+  font-family: 'Avalon', sans-serif;
+  color :#fff;
 }
 
 .deal-funding {
   background-color: #feeae6;
-  padding: 10.6666666667px 16px 10.6666666667px 84px;
+  padding: 10px 16px 10px 84px;
+  font-family: 'Avalon', sans-serif;
+  color:#000;
 }
 
 .medical-tags {
+  font-family: 'ARS Maquette', sans-serif;
+  height: 70px;
   display: block;
   margin-top: 0;
   background: #fffaf8;
-  margin-bottom: 30px;
   line-height: 30px;
-  margin-left: 10px;
+  font-size: 14px;
   border-bottom: 1px solid rgba(255, 68, 34, .25);
 }
 
@@ -455,53 +457,133 @@ nav {
 }
 
 .box-story {
+  height: 100px;
   display: block;
-  margin-top: 40px;
+  padding: 10px;
   background: #fffaf8;
+  color:#555;
   margin-bottom: 30px;
   line-height: 20px;
-  margin-left: 10px;
   font-size: 12px;
-  font-family: "ARS Maquette";
+  font-family: "ARS Maquette", sans-serif;
 }
+
 /* *    4.4 - Topics */
 .topics {
-  margin-top: 30px;
-  flex: 1 0 33.333333%;
-  box-sizing: border-box;
-  padding: 10px;
-  min-height: 600px;
-  margin-left: 50px;
-  flex: 1 0 33.333333%;
-  box-sizing: border-box;
-  padding: 10px;
-  min-height: 600px;
+  max-width: 1192px;
+  margin: 0 auto;
+  padding: 0 20px;
+
 }
-.board-1 {
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Super-Software-Bundle-540x270.jpg);
+.section-wrapper{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.topic-section{
+  flex-basis: 33.33333%;
+  max-width: 33.3333%;
+  padding: 12px;
+  }
+.topic-title{
+  font-family: 'Avalon', sans-serif;
+  color: #ff4422;
+  font-size: 1.5em;
+}
+#topic1{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 250px;
-  min-width: 400px;
-  max-width: 450px;
-  max-height: 300px;
-  margin-top: 15px;
-  justify-content: flex-end;
+  height: 276px;
+}
+#topic2{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+  background-size: cover;
+  height: 276px;
+}
+
+#topic3{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+  background-size: cover;
+  height: 276px;
+}
+
+#topic4{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+  background-size: cover;
+  height: 276px;
+}
+
+#topic5{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+  background-size: cover;
+  height: 276px;
+}
+
+#topic6{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+  background-size: cover;
+  height: 276px;
+}
+
+#topic7{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+  background-size: cover;
+  height: 276px;
+}
+
+#topic8{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+  background-size: cover;
+  height: 276px;
+}
+
+#topic9{
+  background-image:url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Snag_26806cef-368x276.png");
+  background-size: cover;
+  height: 276px;
+}
+
+.topic-header{
+  box-sizing: content-box;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0.19789922805059523) 100%);
+  height: 110px;
+  padding: 166px 10px 0 10px;
   color: #fff;
-
+  vertical-align: bottom;
 }
-.board-1-contents {
-  display: block;
-  top: 100px;
-  position: relative;
-
+.topic-header h5{
+  font-family: 'Shentox', sans-serif;
+}
+.topic-header h3{
+  font-weight: 700;
 }
 
+.recent-topic{
+  margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+  background: rgba(255,68,34,.06);
+}
 
+.recent-header{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
 
-
-
-
-
+.recent-image{
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 96px;
+}
+.recent-image img{
+  height: 100%;
+  object-fit: cover;
+}
+.topic-list{
+  border-bottom: 1px solid #eee;
+  color:#f42;
+}
 /*** 5.0 - Footer ***/
