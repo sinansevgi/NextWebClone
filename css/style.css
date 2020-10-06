@@ -4,7 +4,6 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
 /*
 *  CSS TABLE OF CONTENTS
 *
@@ -21,12 +20,10 @@
 *    4.5 - Ads-deals
 *  5.0 - Footer
 */
-
 /*** 1.0 - Resets ***/
-
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 18px;
 }
 
@@ -34,7 +31,7 @@ html {
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
   overflow-x: hidden;
 }
 
@@ -86,14 +83,14 @@ img {
 }
 
 @font-face {
-  font-family:Shentox;
-  font-style:normal;
-  font-weight:500;
-  src:url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot);
-  src:url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix) format("embedded-opentype"),
-  url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2) format("woff2"),
-  url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff) format("woff"),
-  url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.ttf) format("truetype");
+  font-family: Shentox;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot);
+  src: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix) format("embedded-opentype"),
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2) format("woff2"),
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff) format("woff"),
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.ttf) format("truetype");
 }
 
 body {
@@ -122,8 +119,8 @@ nav {
 /*** 3.1 - Black Menu ***/
 .black-menu {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "ARS Maquette", sans-serif;
   background-color: #000;
   display: -webkit-box;
@@ -175,8 +172,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #first-menu-item {
@@ -197,8 +194,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #545454;
   font-size: 12px;
 }
@@ -233,9 +230,7 @@ nav {
 }
 
 /*** 4.0 - Main ***/
-
 /*** 4.1 - Cover ***/
-
 .cover {
   margin: 0.5%;
   display: -ms-grid;
@@ -248,7 +243,7 @@ nav {
   grid-template-columns: 2fr 1fr;
   -ms-grid-rows: 1fr 10px 1fr;
   grid-template-rows: 1fr 1fr;
-      grid-template-areas:
+  grid-template-areas:
     " large-left-box  small-right-box-1"
     " large-left-box  small-right-box-2";
   font-family: "Avalon", sans-serif;
@@ -257,7 +252,6 @@ nav {
 
 .large-left-box {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   height: 100%;
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/sarah-friar-talk-gq-796x417.png);
@@ -374,7 +368,6 @@ nav {
 }
 
 /*** 4.2 - Latest News ***/
-
 .latest-news {
   padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
@@ -387,8 +380,8 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .section-heading {
@@ -403,7 +396,7 @@ nav {
 
 .news {
   -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  flex-basis: 25%;
   max-width: 25%;
   padding: 12px;
 }
@@ -411,7 +404,7 @@ nav {
 .story-image img {
   width: 100vw;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 135px;
 }
 
@@ -437,7 +430,6 @@ nav {
 }
 
 /*** 4.3 - Deals ***/
-
 .deals {
   padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
@@ -472,19 +464,19 @@ nav {
 
 .deals-container {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .deal-header-link {
@@ -494,7 +486,7 @@ nav {
 
 .deal {
   -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  flex-basis: 25%;
   max-width: 25%;
   padding: 12px;
 }
@@ -559,7 +551,6 @@ nav {
 }
 
 /*** 4.4 - Topics ***/
-
 .topics {
   max-width: 1192px;
   margin: 0 auto;
@@ -573,13 +564,13 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .topic-section {
   -ms-flex-preferred-size: 33.33333%;
-      flex-basis: 33.33333%;
+  flex-basis: 33.33333%;
   max-width: 33.3333%;
   padding: 12px;
 }
@@ -646,7 +637,7 @@ nav {
 
 .topic-header {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   background: rgb(2, 0, 36);
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(2, 0, 36, 1)), to(rgba(255, 255, 255, 0.19789922805059523)));
   background: -o-linear-gradient(bottom, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 0.19789922805059523) 100%);
@@ -672,36 +663,36 @@ nav {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   background: rgba(255, 68, 34, 0.06);
 }
 
 .recent-header {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -ms-flex-negative: 1;
-      flex-shrink: 1;
+  flex-shrink: 1;
   -ms-flex-preferred-size: 0;
-      flex-basis: 0;
+  flex-basis: 0;
   color: #f32;
   font-weight: 700;
 }
 
 .recent-image {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   -ms-flex-preferred-size: 96px;
-      flex-basis: 96px;
+  flex-basis: 96px;
 }
 
 .recent-image img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 96px;
   width: 96px;
   background-position: 50%;
@@ -725,7 +716,6 @@ nav {
 }
 
 /*** 4.5 - Ads-deals ***/
-
 .ads-deals {
   padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
@@ -734,15 +724,15 @@ nav {
 
 .ads-deals-header {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #f42;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-right: 12px;
 }
 
@@ -764,42 +754,42 @@ nav {
   padding: 12px;
 }
 
-.latest-deals-box > *:nth-child(1) {
+.latest-deals-box>*:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
 
-.latest-deals-box > *:nth-child(2) {
+.latest-deals-box>*:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
 
-.latest-deals-box > *:nth-child(3) {
+.latest-deals-box>*:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
 
-.latest-deals-box > *:nth-child(4) {
+.latest-deals-box>*:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-column: 7;
 }
 
-.latest-deals-box > *:nth-child(5) {
+.latest-deals-box>*:nth-child(5) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
 
-.latest-deals-box > *:nth-child(6) {
+.latest-deals-box>*:nth-child(6) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
 }
 
-.latest-deals-box > *:nth-child(7) {
+.latest-deals-box>*:nth-child(7) {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
 }
 
-.latest-deals-box > *:nth-child(8) {
+.latest-deals-box>*:nth-child(8) {
   -ms-grid-row: 3;
   -ms-grid-column: 7;
 }
@@ -828,7 +818,6 @@ nav {
 }
 
 /*** 5.0 - Footer ***/
-
 .social-menu {
   background: #131313;
   text-align: center;
@@ -837,7 +826,6 @@ nav {
 .social-links {
   padding-top: 50px;
   padding-bottom: 20px;
-
 }
 
 .social-links a {
@@ -901,7 +889,6 @@ nav {
 *MEDIA QUERIES
 *
 ***/
-
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
@@ -948,12 +935,12 @@ nav {
     grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 10px 1fr 10px 1fr;
     grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "large-left-box""small-right-box-1""small-right-box-2";
+    grid-template-areas: "large-left-box""small-right-box-1""small-right-box-2";
   }
 
   .news {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
     max-width: 100%;
   }
 
@@ -968,22 +955,22 @@ nav {
     grid-gap: 5px;
   }
 
-  .news-story > *:nth-child(1) {
+  .news-story>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .news-story > *:nth-child(2) {
+  .news-story>*:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .news-story > *:nth-child(3) {
+  .news-story>*:nth-child(3) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
 
-  .news-story > *:nth-child(4) {
+  .news-story>*:nth-child(4) {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
   }
@@ -992,20 +979,18 @@ nav {
     width: 75px;
     height: 75px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 
   .story-title {
     -ms-flex-preferred-size: 80%;
-        flex-basis: 80%;
+    flex-basis: 80%;
     max-width: 80%;
     overflow: hidden;
-
   }
 
   .story-image {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     grid-row: 1/3;
     max-width: 75px;
   }
@@ -1017,7 +1002,7 @@ nav {
 
   .deal {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
     max-width: 100%;
   }
 
@@ -1032,7 +1017,7 @@ nav {
 
   .topic-section {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
     max-width: 100%;
   }
 
@@ -1043,42 +1028,42 @@ nav {
     grid-template-rows: repeat(8, 1fr);
   }
 
-  .latest-deals-box > *:nth-child(1) {
+  .latest-deals-box>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(2) {
+  .latest-deals-box>*:nth-child(2) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(3) {
+  .latest-deals-box>*:nth-child(3) {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(4) {
+  .latest-deals-box>*:nth-child(4) {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(5) {
+  .latest-deals-box>*:nth-child(5) {
     -ms-grid-row: 9;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(6) {
+  .latest-deals-box>*:nth-child(6) {
     -ms-grid-row: 11;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(7) {
+  .latest-deals-box>*:nth-child(7) {
     -ms-grid-row: 13;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(8) {
+  .latest-deals-box>*:nth-child(8) {
     -ms-grid-row: 15;
     -ms-grid-column: 1;
   }
@@ -1093,36 +1078,35 @@ nav {
     grid-template-rows: 1fr 1fr;
   }
 
-  .ads-container > *:nth-child(1) {
+  .ads-container>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .ads-container > *:nth-child(2) {
+  .ads-container>*:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .ads-container > *:nth-child(3) {
+  .ads-container>*:nth-child(3) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
 
-  .ads-container > *:nth-child(4) {
+  .ads-container>*:nth-child(4) {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
   }
 
   .ads-container img {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     grid-row: 1/3;
     margin-top: 3px;
   }
 
   .deals-price {
     -ms-grid-column: 2;
-        grid-column-start: 2;
+    grid-column-start: 2;
   }
 
   .img-details {
@@ -1140,25 +1124,24 @@ nav {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .social-links li {
     display: inline;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .large-left-box {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
     -ms-grid-column: 1;
   }
 
@@ -1197,32 +1180,30 @@ nav {
     grid-template-rows: 1fr 2fr;
   }
 
-  nav > *:nth-child(1) {
+  nav>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  nav > *:nth-child(2) {
+  nav>*:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
   }
 
-  nav > *:nth-child(3) {
+  nav>*:nth-child(3) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
 
-  nav > *:nth-child(4) {
+  nav>*:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
   }
 
   .black-menu {
     -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-column: 2/3;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
     grid-row: 1/2;
     width: auto;
   }
@@ -1233,20 +1214,16 @@ nav {
 
   .main-menu {
     -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
     grid-row: 2/3;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
 
   .tnw-logo {
     display: block;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     grid-row: 1/3;
     height: 100%;
     width: 100px;
@@ -1269,13 +1246,13 @@ nav {
   .deal {
     padding: 10px;
     -ms-flex-preferred-size: 33.333%;
-        flex-basis: 33.333%;
+    flex-basis: 33.333%;
     max-width: 33.3333%;
   }
 
   .news {
     -ms-flex-preferred-size: 33.333%;
-        flex-basis: 33.333%;
+    flex-basis: 33.333%;
     max-width: 33.3333%;
     padding: 10px;
   }
@@ -1287,7 +1264,7 @@ nav {
   .topic-section {
     padding: 10px;
     -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
     max-width: 50%;
   }
 
@@ -1303,47 +1280,47 @@ nav {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .latest-deals-box > *:nth-child(1) {
+  .latest-deals-box>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(2) {
+  .latest-deals-box>*:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
   }
 
-  .latest-deals-box > *:nth-child(3) {
+  .latest-deals-box>*:nth-child(3) {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
   }
 
-  .latest-deals-box > *:nth-child(4) {
+  .latest-deals-box>*:nth-child(4) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(5) {
+  .latest-deals-box>*:nth-child(5) {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
   }
 
-  .latest-deals-box > *:nth-child(6) {
+  .latest-deals-box>*:nth-child(6) {
     -ms-grid-row: 3;
     -ms-grid-column: 5;
   }
 
-  .latest-deals-box > *:nth-child(7) {
+  .latest-deals-box>*:nth-child(7) {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
   }
 
-  .latest-deals-box > *:nth-child(8) {
+  .latest-deals-box>*:nth-child(8) {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
   }
 
-  .latest-deals-box > *:nth-child(9) {
+  .latest-deals-box>*:nth-child(9) {
     -ms-grid-row: 5;
     -ms-grid-column: 5;
   }
