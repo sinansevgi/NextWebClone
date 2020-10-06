@@ -815,7 +815,7 @@ nav {
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "large-left-box" "small-right-box-1" "small-right-box-2";
+    grid-template-areas: "large-left-box""small-right-box-1""small-right-box-2";
   }
 
   .news {
@@ -972,7 +972,7 @@ nav {
   .deals {
     padding: 10px;
   }
-  
+
   .deal {
     padding: 10px;
     flex-basis: 33.333%;
