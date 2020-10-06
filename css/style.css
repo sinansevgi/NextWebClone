@@ -20,13 +20,13 @@
 html {
   box-sizing: border-box;
   font-size: 18px;
-  overflow-x: hidden;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  overflow-x: hidden;
 }
 
 body,
@@ -76,6 +76,17 @@ img {
   font-weight: 700;
 }
 
+@font-face {
+  font-family:Shentox;
+  font-style:normal;
+  font-weight:500;
+  src:url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot);
+  src:url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.eot#iefix) format("embedded-opentype"),
+  url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff2) format("woff2"),
+  url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.woff) format("woff"),
+  url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/fonts/shentox-medium.ttf) format("truetype");
+}
+
 body {
   font-family: 'ARS Maquette', sans-serif;
 }
@@ -102,21 +113,20 @@ nav {
 .black-menu {
   align-items: center;
   font-family: "ARS Maquette", sans-serif;
-  width: 100vw;
-  height: 2rem;
   background-color: #000;
   display: flex;
 }
 
 .black-menu li {
-  margin-left: 5px;
-  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .black-menu a {
   color: hsla(0, 0%, 100%, 0.6);
   text-decoration: none;
-  font-size: 0.825rem;
+  font-size: 13px;
+  line-height: 32px;
 }
 
 #first-item {
@@ -131,14 +141,12 @@ nav {
 .corporate-menu {
   display: flex;
   margin-left: auto;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 /*** 3.2 - Main Menu ***/
 .main-menu {
   display: flex;
-  height: 48px;
-  width: 100vw;
   font-family: "Shentox", sans-serif;
   font-weight: 500;
   color: #aaa;
@@ -146,10 +154,17 @@ nav {
 
 .menu {
   display: flex;
+  align-items: center;
+}
+
+#first-menu-item {
+  padding: 0 12px 0 20px;
+  font-size: 14px;
+  letter-spacing: 0.04rem;
 }
 
 .main-menu li {
-  padding: 18px 12px 0 12px;
+  padding: 0 12px 0 12px;
   font-size: 14px;
   letter-spacing: 0.04rem;
 }
@@ -168,7 +183,8 @@ nav {
 
 .search-button {
   border-left: 1px solid #aaa;
-  padding: 16px;
+  padding: 14px;
+  margin-right: 10px;
 }
 
 .right-menu button {
@@ -193,6 +209,7 @@ nav {
 /*** 4.0 - Main ***/
 
 /*** 4.1 - Cover ***/
+
 .cover {
   margin: 0.5%;
   display: grid;
@@ -315,6 +332,7 @@ nav {
 }
 
 /*** 4.2 - Latest News ***/
+
 .latest-news {
   padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
@@ -364,18 +382,13 @@ nav {
   text-decoration: none;
 }
 
-#first-menu-item {
-  padding: 18px 12px 0 20px;
-  font-size: 14px;
-  letter-spacing: 0.04rem;
-}
-
 .story-author::after {
   content: ' \B7';
   margin: 4px;
 }
 
 /*** 4.3 - Deals ***/
+
 .deals {
   padding: 1.5rem 1rem 1.5rem 1rem;
   max-width: 1192px;
@@ -487,6 +500,7 @@ nav {
 }
 
 /*** 4.4 - Topics ***/
+
 .topics {
   max-width: 1192px;
   margin: 0 auto;
@@ -660,14 +674,12 @@ nav {
 }
 
 .img-details {
-  margin-bottom: 10px;
   font-size: 1rem;
 }
 
 .img-details a {
   color: #000;
   text-decoration: none;
-  padding-bottom: 30px;
 }
 
 .img-details :hover {
@@ -685,6 +697,7 @@ nav {
 }
 
 /*** 5.0 - Footer ***/
+
 .social-menu {
   background: #131313;
   text-align: center;
@@ -692,6 +705,8 @@ nav {
 
 .social-links {
   padding-top: 50px;
+  padding-bottom: 20px;
+
 }
 
 .social-links a {
@@ -701,13 +716,20 @@ nav {
 }
 
 .social-links li {
+  display: inline;
+  margin: 2px;
+}
+
+.social-icon {
+  text-align: center;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   border: 2px solid #333;
-  box-sizing: border-box;
   border-radius: 50%;
   background: #333;
-  padding: 10px;
-  margin: 10px;
-  display: inline;
+  padding-top: 10px;
 }
 
 .footer-menu li {
@@ -715,7 +737,7 @@ nav {
   margin: 5px;
 }
 
-.social-links li:hover {
+.social-icon:hover {
   background: #000;
 }
 
@@ -725,7 +747,6 @@ nav {
 }
 
 .footer-menu a {
-  font-size: 0.75rem;
   font-family: 'Shentox', sans-serif;
   text-decoration: none;
   color: #aaa;
@@ -750,7 +771,7 @@ nav {
 *
 ***/
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 14px;
   }
@@ -769,9 +790,10 @@ nav {
 
   #tnw-logo {
     display: block;
-    height: 48px;
     width: 100px;
-    padding: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     background: #000;
   }
 
@@ -805,7 +827,7 @@ nav {
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: 75px 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 25px;
     grid-gap: 5px;
   }
 
@@ -818,6 +840,8 @@ nav {
   .story-title {
     flex-basis: 80%;
     max-width: 80%;
+    overflow: hidden;
+
   }
 
   .story-image {
@@ -883,7 +907,6 @@ nav {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
   }
 
   .social-links li {
@@ -899,9 +922,11 @@ nav {
 
   .tnw-logo-visible {
     display: block !important;
-    padding: 16px;
-    height: 48px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 100px;
+    height: 48px;
     background: #000;
   }
 
@@ -918,7 +943,7 @@ nav {
   }
 
   .corporate-menu {
-    margin-left: 0;
+    margin-left: auto;
   }
 
   .main-menu {
