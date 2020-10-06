@@ -34,7 +34,7 @@
                 </ul>
             </div>
             <div class="main-menu" id="navbar">
-                <div id="tnw-logo"><img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" /></div>
+                <div class="tnw-logo2" id="tnw-logo"><img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" /></div>
                 <ul class="menu">
                     <li id="first-menu-item">LATEST</li>
                     <li>HARD FORK</li>
@@ -191,9 +191,11 @@
                 <a href="#" id="heading-link">
                     <h2 id="deals-heading">Latest funding rounds on Index.co ></h2>
                 </a>
-                <a class="deals-right" href="#">See more</a>
-                <a class="deals-right" href="#">Get updates by email</a>
-                <a class="deals-right" href="#">Add info</a>
+                <ul class="deal-right">
+                    <li class="deals-right" href="#">See more</li>
+                    <li class="deals-right" href="#">Get updates by email</li>
+                    <li class="deals-right" href="#">Add info</li>
+                </ul>
                 <div class="deals-container">
                     <div class="deal">
                         <div class="deal-story">
@@ -203,7 +205,7 @@
                                     class="deal-header-image"
                                     src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1181344816476516353%2F0FXJ7_nh.jpg&signature=dafb8ddbd01fd096c06320c645221cc1"
                                 />
-                                <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
+                                <h4 class="deal-heading">Access Fintech</h4>
                                 <div class="deal-funding">
                                     <h4>$2.4M</h4>
                                     <h5>Seed fund</h5>
@@ -214,9 +216,7 @@
                                 <li><i aria-hidden="true" class="fa fa-tag"></i> Hyde Park Venture</li>
                             </ul>
                             <div class="box-story">
-                                <p>
-                                    Indianapolis-based Malomo raises $2.8 million to turn order tracking into a branded customer experience
-                                </p>
+                                <p>Indianapolis-based Malomo raises $2.8 million to turn order tracking into a branded customer experience <span class="source">on FinSMEs</span></p>
                             </div>
                         </div>
                     </div>
@@ -239,8 +239,7 @@
                                 <li><i aria-hidden="true" class="fa fa-tag"></i>Medical</li>
                             </ul>
                             <div class="box-story">
-                                <p>iWEECARE Extends US$2.4M Pre-Series A</p>
-                                <p>Financing on FinSMEs</p>
+                                <p>iWEECARE Extends US$2.4M Pre-Series A <span class="source">on FinSMEs</span></p>
                             </div>
                         </div>
                     </div>
@@ -252,7 +251,7 @@
                                     class="deal-header-image"
                                     src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Findex.co%2Fuploads%2Flogos%2F8d15968e03502755394448840d4a82fc0736e612.png&signature=16b44069ca463ae7d015fe920d408c87"
                                 />
-                                <h4 class="deal-heading">iWEECARE Co., Ltd</h4>
+                                <h4 class="deal-heading">MBS Highway</h4>
                                 <div class="deal-funding">
                                     <h4>$2.4M</h4>
                                     <h5>Seed fund</h5>
@@ -263,8 +262,7 @@
                                 <li><i aria-hidden="true" class="fa fa-tag"></i>Medical</li>
                             </ul>
                             <div class="box-story">
-                                <p>iWEECARE Extends US$2.4M Pre-Series A</p>
-                                <p>Financing on FinSMEs</p>
+                                <p>iWEECARE Extends US$2.4M Pre-Series A <span class="source">on FinSMEs</span></p>
                             </div>
                         </div>
                     </div>
@@ -669,8 +667,7 @@
             window.onscroll = function () {
                 myFunction();
             };
-            console.log(screen.width);
-
+            
             // Get the navbar
             var navbar = document.getElementById("navbar");
             var tnwlogo = document.getElementById("tnw-logo");
@@ -682,13 +679,15 @@
             function myFunction() {
                 if (window.pageYOffset > sticky) {
                     navbar.classList.add("sticky");
-                    if (screen.width <= 1024 && screen.width > 768) {
+                    if (screen.width <= 1024 && screen.width >= 769) {
                         tnwlogo.classList.add("tnw-logo-visible");
+                        tnwlogo.classList.remove("tnw-logo2");
                     }
                 } else {
                     navbar.classList.remove("sticky");
-                    if (screen.width <= 1024 && screen.width > 768) {
+                    if (screen.width <= 1024 && screen.width >= 769) {
                         tnwlogo.classList.remove("tnw-logo-visible");
+                        tnwlogo.classList.add("tnw-logo2");
                     }
                 }
             }
