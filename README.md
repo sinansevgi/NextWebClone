@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # The Next Web Website Clone
 
 > This project is responsive clone of the The Next Web website.
